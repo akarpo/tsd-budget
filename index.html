@@ -1080,7 +1080,39 @@
     </div>
   </div>
 
+  <!-- Chart 9b: foundation allowance trajectory vs cost per pupil -->
+  <div class="chart-block">
+    <div class="chart-title">State foundation allowance per pupil vs operating cost per pupil, FY15-FY24</div>
+    <div class="chart-subtitle">The state's per-pupil contribution (the orange line) grew $1,509 over nine years. TSD's operating cost per pupil (the blue line) grew $4,459 over the same span. The shaded area between is the gap that <em>everything else</em> has to fill — local Hold Harmless millage, county PA-18, IDEA flow-through, Medicaid reimbursement, and (in FY20-FY24) one-time federal ESSER aid.</div>
+    <div class="chart-wrap">
+      <div class="chart-canvas-wrap"><canvas id="chart-foundation-gap"></canvas></div>
+      <div class="chart-source">
+        Sources: TSD per-pupil foundation allowance pulled from the June 15, 2021 Board Meeting Budget Presentation (10-year history slide, FY11-FY22 series) and the June 6, 2024 Board Workshop Budget Presentation (Foundation Allowance History slide, FY20-FY25 series). FY26 amended computed from the January 13, 2026 Board Budget Planning Workshop deck ($130,788,472 amended foundation revenue ÷ 12,069.81 amended enrollment = $10,836). Operating cost per pupil from FY24 ACFR Statistical Section (p. 77).
+        <a href="boarddocs/20240606_budget_adoption_060624_Budget_Presentation_-_Board_Workshop-Meeting.pdf">June 6, 2024 deck</a> · <a href="boarddocs/20210615_budget_06152021_Budget_Presentation_-_Board_Meeting.pptx">June 15, 2021 deck</a>.
+      </div>
+    </div>
+  </div>
+
+  <div class="stat-grid">
+    <div class="stat">
+      <div class="stat-number">+$1,509<sup class="cite"><a href="#s9-src-4">4</a></sup></div>
+      <div class="stat-label">State foundation allowance growth per pupil, FY15 → FY24 (+17%)</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">+$4,459<sup class="cite"><a href="#s9-src-1">1</a></sup></div>
+      <div class="stat-label">Operating cost growth per pupil, FY15 → FY24 (+41%)</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">+$2,950<sup class="cite"><a href="#s9-src-4">4</a></sup></div>
+      <div class="stat-label">The per-pupil gap that local revenue + categoricals + ESSER had to fill, FY15 → FY24</div>
+    </div>
+  </div>
+
   <div class="prose">
+    <p>
+      Read by sub-period, the state's per-pupil contribution moved <em>very</em> slowly through the pre-Covid years. Foundation allowance grew only <strong>$310 from FY15 to FY19</strong> — about 0.9% per year, below general inflation.<sup class="cite"><a href="#s9-src-4">4</a></sup> Acceleration came later: <strong>+$1,199 from FY19 to FY24</strong> (about 2.5%/year, partly Covid-era state aid increases), and the FY26 amended figure sits at <strong>$10,836</strong>.<sup class="cite"><a href="#s9-src-4">4</a></sup> Even with the acceleration, foundation growth has trailed per-pupil cost growth in every period.
+    </p>
+
     <h3>Why per-pupil revenue can't simply rise to match per-pupil cost</h3>
     <p>
       Reading Section 2's chart, both per-pupil cost and per-pupil <em>revenue</em> appear to grow at roughly the same rate. That picture is misleading: a meaningful share of the per-pupil revenue growth is one-time and pass-through money the board cannot redirect or repeat:
@@ -1124,6 +1156,10 @@
       <li id="s9-src-3">
         <strong>Decomposition of per-pupil revenue growth</strong>. Drawn from the FY24 ACFR Statement of Revenues, Expenditures, and Changes in Fund Balance (federal revenue line — ESSER component) and Schedule of Pension Contributions (MPSERS amount, of which ~$498/pupil is now Section 147c categorical pass-through per the MD&amp;A, p. 9). Detailed in <a href="#esser">Section 6</a> (ESSER) and <a href="#mpsers">Section 7</a> (MPSERS pass-through).
         <a href="boarddocs/20241119_audit_8.B._24680_Troy_School_District_ACFR_0624_FS_Final.pdf.r2.md">ACFR MD&amp;A and statistical section</a>.
+      </li>
+      <li id="s9-src-4">
+        <strong>TSD foundation allowance per pupil, FY15-FY26</strong>. Trajectory: FY15 $8,885 · FY16 $8,955 · FY17 $8,964 · FY18 $9,075 · FY19 $9,195 · FY20 $9,315 · FY21 $9,315 · FY22 $9,430 · FY23 $9,874 · FY24 $10,394 · FY25 $10,635 · FY26 amended $10,836. Pre-FY22 figures from the June 15, 2021 Board Meeting Budget Presentation (10-year history slide showing FY11-FY22). FY20-FY25 confirmed in the June 6, 2024 Board Workshop Budget Presentation (Foundation Allowance History slide). FY26 amended computed directly from the January 13, 2026 Board Budget Planning Workshop deck (amended foundation revenue $130,788,472 ÷ amended enrollment 12,069.81 = $10,836). Both chart slides extracted from the embedded chart XML in the corresponding pptx files; the FY26 figure is derived arithmetically from the budget-revision schedule on the same deck.
+        <a href="boarddocs/20240606_budget_adoption_060624_Budget_Presentation_-_Board_Workshop-Meeting.pdf">June 6, 2024 budget presentation</a> · <a href="boarddocs/20210615_budget_06152021_Budget_Presentation_-_Board_Meeting.pptx">June 15, 2021 budget presentation</a> · <a href="boarddocs/20260113_budget_planning_4.a._Budget_Presentation_1-13-26.pdf">Jan 13, 2026 budget planning</a>.
       </li>
     </ol>
   </details>
@@ -1185,7 +1221,6 @@
       <li><strong>DM Burr scope expansion ($3.2M → $5.8M)</strong> — was this scope growth (new buildings, more services), rate inflation (renegotiated contract), or both? No board presentation documenting the change was found.</li>
       <li><strong>ESSER spending mapped to specific positions</strong> — Single audits report ESSER expenditures by program, not by position. Which positions were ESSER-funded, and which transitioned to baseline? A position-control crosswalk would resolve this.</li>
       <li><strong>The composition of the $24.2M cumulative cuts plan</strong> — the category totals (Salaries $13.25M, Benefits $6.625M, Purchased Services $3.75M, Supplies $0.6M) are public; the specifics (which positions, which programs) are not yet.</li>
-      <li><strong>Year-over-year foundation allowance per pupil for FY15-FY24</strong> — we have FY26 ($10,836 amended) and forward forecasts; the full prior-year history would need cross-reference to state aid status reports.</li>
     </ol>
 
     <p style="margin-top: 2em; font-style: italic; color: var(--text-soft);">
@@ -1287,6 +1322,16 @@ const DATA = {
     messa:  [11.10, 11.10,  4.40, 14.80, 12.60, 12.70, 16.90],
     outsourced: [11.36, 7.82, 7.23, 8.48, 11.12, 14.06, 14.82],
     salaries:   [73.15, 73.31, 79.54, 79.44, 83.64, 86.08, 88.37],
+  },
+
+  // Section 9: TSD per-pupil foundation allowance history FY15-FY26
+  // FY15-FY22 from June 15, 2021 budget adoption deck (10-year history slide)
+  // FY20-FY25 from June 6, 2024 budget adoption deck (Foundation Allowance History slide)
+  // FY26 amended computed from Jan 13, 2026 Budget Planning deck:
+  //   $130,788,472 foundation revenue / 12,069.81 enrollment = $10,836
+  foundation_history: {
+    years:    ['FY15','FY16','FY17','FY18','FY19','FY20','FY21','FY22','FY23','FY24','FY25','FY26'],
+    foundation: [8885, 8955, 8964, 9075, 9195, 9315, 9315, 9430, 9874, 10394, 10635, 10836],
   },
 
   // Section 4: HCA / Edustaff SpEd-coded timeline FY22-FY26 YTD (from xlsx)
@@ -1924,19 +1969,84 @@ new Chart(document.getElementById('chart-revenue-capacity'), {
 });
 
 // ====================================================================
+// CHART 9b: FOUNDATION ALLOWANCE vs OPERATING COST PER PUPIL
+// Shows the widening gap that local + categorical + federal revenue
+// have to fill above the state foundation.
+// ====================================================================
+new Chart(document.getElementById('chart-foundation-gap'), {
+  type: 'line',
+  data: {
+    labels: DATA.per_pupil.years, // FY15-FY24 — chart is bounded by cost data
+    datasets: [
+      {
+        label: 'Operating cost per pupil',
+        data: DATA.per_pupil.cost_per_pupil,
+        borderColor: COLORS.blue,
+        backgroundColor: 'rgba(74, 107, 138, 0.18)',
+        borderWidth: 3,
+        tension: 0.2,
+        pointRadius: 4,
+        fill: '+1', // fill DOWN to the next dataset (foundation), creates the "gap" band
+      },
+      {
+        label: 'State foundation allowance per pupil',
+        data: DATA.foundation_history.foundation.slice(0, DATA.per_pupil.years.length),
+        borderColor: COLORS.accent,
+        backgroundColor: COLORS.accent,
+        borderWidth: 3,
+        tension: 0.2,
+        pointRadius: 4,
+        fill: false,
+      },
+    ],
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    interaction: { mode: 'index', intersect: false },
+    plugins: {
+      legend: { position: 'bottom' },
+      tooltip: {
+        callbacks: {
+          label: (ctx) => `${ctx.dataset.label}: $${ctx.parsed.y.toLocaleString()}`,
+          afterBody: (ctxs) => {
+            if (ctxs.length === 2) {
+              const gap = Math.abs(ctxs[0].parsed.y - ctxs[1].parsed.y);
+              return [`Gap (filled by Hold Harmless + categoricals + ESSER): $${gap.toLocaleString()}`];
+            }
+            return [];
+          },
+        },
+      },
+    },
+    scales: {
+      x: yearAxis,
+      y: {
+        ticks: { callback: (v) => `$${(v/1000).toFixed(0)}K` },
+        grid: { color: '#f0ecdf' },
+        beginAtZero: false,
+        suggestedMin: 8000,
+        suggestedMax: 16000,
+      },
+    },
+  },
+});
+
+// ====================================================================
 // YEAR-RANGE FILTER + PER-PUPIL TOGGLE (Phase 2B)
 // Chart.js maintains a registry by canvas id — grab references here
 // so we don't have to refactor the chart constructors above.
 // ====================================================================
 
 const CHARTS = {
-  perPupil: Chart.getChart('chart-per-pupil'),
-  hca:      Chart.getChart('chart-hca-timeline'),
-  sped:     Chart.getChart('chart-sped'),
-  growth:   Chart.getChart('chart-growth-rates'),
-  esser:    Chart.getChart('chart-esser'),
-  mpsers:   Chart.getChart('chart-mpsers'),
-  revenue:  Chart.getChart('chart-revenue-capacity'),
+  perPupil:    Chart.getChart('chart-per-pupil'),
+  hca:         Chart.getChart('chart-hca-timeline'),
+  sped:        Chart.getChart('chart-sped'),
+  growth:      Chart.getChart('chart-growth-rates'),
+  esser:       Chart.getChart('chart-esser'),
+  mpsers:      Chart.getChart('chart-mpsers'),
+  revenue:     Chart.getChart('chart-revenue-capacity'),
+  foundation:  Chart.getChart('chart-foundation-gap'),
 };
 
 // Snapshot original data so filter slices always start from the source-of-truth
@@ -1976,6 +2086,15 @@ const SNAPSHOTS = {
     // Section 9 chart now: enrollment + cost per pupil (from DATA.per_pupil)
     years: [...DATA.per_pupil.years],
     series: [[...DATA.per_pupil.enrollment], [...DATA.per_pupil.cost_per_pupil]],
+  },
+  foundation: {
+    // Section 9 second chart: cost-per-pupil + foundation allowance per pupil.
+    // Chart years are bounded by cost data (FY15-FY24); foundation slice matches.
+    years: [...DATA.per_pupil.years],
+    series: [
+      [...DATA.per_pupil.cost_per_pupil],
+      DATA.foundation_history.foundation.slice(0, DATA.per_pupil.years.length),
+    ],
   },
 };
 
@@ -2060,7 +2179,7 @@ function applyAllFilters() {
   const fromFY = document.getElementById('filter-from').value;
   const toFY   = document.getElementById('filter-to').value;
   refreshPerPupil(fromFY, toFY);
-  ['hca', 'sped', 'growth', 'esser', 'mpsers', 'revenue'].forEach(k => refreshGeneric(k, fromFY, toFY));
+  ['hca', 'sped', 'growth', 'esser', 'mpsers', 'revenue', 'foundation'].forEach(k => refreshGeneric(k, fromFY, toFY));
 }
 
 (function initFilter() {
