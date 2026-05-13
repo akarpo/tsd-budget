@@ -1,0 +1,770 @@
+[
+  {
+    "unique": "CMTJCC4C6101",
+    "name": "Board of Education Workshop 6:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20230110",
+    "unid": "40435DBEA3AE423D8525892F004C6101"
+  },
+  {
+    "unique": "CM3TZX79DCBD",
+    "name": "Organizational and Regular Meeting of the Board of Education 7:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20230117",
+    "unid": "7C93A020F32F78CE852589170079DCBD"
+  },
+  {
+    "unique": "CN8RU86F636C",
+    "name": "Special Meeting of the Board of Education 1:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20230120",
+    "unid": "EB5A11D39D14CE928525893C006F636C"
+  },
+  {
+    "unique": "CNPMWJ58D601",
+    "name": "Board of Education Workshop 6:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20230207",
+    "unid": "D5BCDA73A3A8ED0C8525894B0058D601"
+  },
+  {
+    "unique": "CNTMG85B242D",
+    "name": "Regular Meeting of the Board of Education 7:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20230214",
+    "unid": "BDBD78DAA135730F8525894F005B242D"
+  },
+  {
+    "unique": "CPHSC971FF70",
+    "name": "Board of Education Workshop 6:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20230307",
+    "unid": "2D88FE7DDDE67371852589650071FF70"
+  },
+  {
+    "unique": "CPHT6674FAFC",
+    "name": "Board of Education Winter Retreat 9:00 AM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20230311",
+    "unid": "D6E8923B0F60A983852589650074FAFC"
+  },
+  {
+    "unique": "CPHSLJ72FF06",
+    "name": "Regular Meeting of the Board of Education 7:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20230321",
+    "unid": "208C35469C07957E852589650072FF06"
+  },
+  {
+    "unique": "CQ8N3B5796F8",
+    "name": "Board of Education Workshop 6:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20230404",
+    "unid": "DA9B318D2FF5EB738525897C005796F8"
+  },
+  {
+    "unique": "CQULFU55E40F",
+    "name": "Regular Meeting of the Board of Education 7:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20230418",
+    "unid": "88A9B250E24C3C55852589900055E40F"
+  },
+  {
+    "unique": "CRBNB759DD75",
+    "name": "Board of Education Workshop 6:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20230502",
+    "unid": "2FEC5470875444A98525899F0059DD75"
+  },
+  {
+    "unique": "CRBP6E62ECA7",
+    "name": "Special Meeting of the Board of Education 5:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20230502",
+    "unid": "B178F47AFF7F6ED08525899F0062ECA7"
+  },
+  {
+    "unique": "CRNJAM4C4280",
+    "name": "Regular Meeting of the Board of Education 7:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20230516",
+    "unid": "C5FE5CC0F7604DFF852589AA004C4280"
+  },
+  {
+    "unique": "CSBPKV635E54",
+    "name": "Special Meeting of the Board of Education 5:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20230606",
+    "unid": "CE953B3362DF1AF4852589BF00635E54"
+  },
+  {
+    "unique": "CSBQ2T64582D",
+    "name": "Board of Education Workshop 6:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20230606",
+    "unid": "71E461BB2E0A9D27852589BF0064582D"
+  },
+  {
+    "unique": "CSJRSR6B3383",
+    "name": "Regular Meeting of the Board of Education 7:30 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20230613",
+    "unid": "DD4DC01A052CC595852589C6006B3383"
+  },
+  {
+    "unique": "CT6JQA4E4383",
+    "name": "Special Meeting of the Board of Education 8:30 AM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20230628",
+    "unid": "0F0A3F217BC3D3A6852589DA004E4383"
+  },
+  {
+    "unique": "CTMSBN6D701C",
+    "name": "Regular Meeting of the Board of Education 9:30 AM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20230718",
+    "unid": "ED7BF5A9FA0601D0852589E9006D701C"
+  },
+  {
+    "unique": "CUKN295D4265",
+    "name": "Regular Meeting of the Board of Education 6:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20230815",
+    "unid": "9394D8F2D5C6945C85258A07005D4265"
+  },
+  {
+    "unique": "CV8PPM61B8DC",
+    "name": "Board of Education Workshop 6:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20230905",
+    "unid": "28D77242D168040E85258A1C0061B8DC"
+  },
+  {
+    "unique": "CVDRP26E81BB",
+    "name": "Special Meeting of the Board of Education 6:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20230905",
+    "unid": "5A598DB377ECEB6E85258A21006E81BB"
+  },
+  {
+    "unique": "CVDRRJ6F0A08",
+    "name": "Regular Meeting of the Board of Education 7:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20230919",
+    "unid": "720DFFEA9DFEBA3985258A21006F0A08"
+  },
+  {
+    "unique": "CW5KVR532B68",
+    "name": "Board of Education Workshop 6:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20231003",
+    "unid": "20034FD4EECF1A9385258A3900532B68"
+  },
+  {
+    "unique": "CWGQKJ6624F4",
+    "name": "Regular Meeting of the Board of Education 7:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20231017",
+    "unid": "FEC6811AEB0BB72485258A44006624F4"
+  },
+  {
+    "unique": "CXDQYR6BA05B",
+    "name": "Board of Education Workshop 7:00 P.M. (FOLLOWING SPECIAL MEETING)",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20231114",
+    "unid": "CAD5F3924D61A5CC85258A61006BA05B"
+  },
+  {
+    "unique": "CXDRAK6C0918",
+    "name": "Special Meeting of the Board of Education 6:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20231114",
+    "unid": "F6BAB1DB92EDCF9B85258A61006C0918"
+  },
+  {
+    "unique": "CY2QAD678859",
+    "name": "Special Meeting of the Board of Education 6:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20231205",
+    "unid": "928D2429A458B34785258A7600678859"
+  },
+  {
+    "unique": "CY2QAS6790B7",
+    "name": "Board of Education Workshop 7:00 P.M. (FOLLOWING SPECIAL MEETING)",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20231205",
+    "unid": "F7F3F27B929B8C4285258A76006790B7"
+  },
+  {
+    "unique": "CYAJ2S4AEC43",
+    "name": "Regular Meeting of the Board of Education 7:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20231212",
+    "unid": "687028345114C0FF85258A7E004AEC43"
+  },
+  {
+    "unique": "CZ7JAX4C4E91",
+    "name": "Board of Education Workshop 6:00 P.M.",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20240109",
+    "unid": "5F6FA5C5657D093F85258A9B004C4E91"
+  },
+  {
+    "unique": "CYPL3V54A634",
+    "name": "Organizational and Regular Meeting of the Board of Education 7:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20240116",
+    "unid": "EFF2E6896A9A000F85258A8B0054A634"
+  },
+  {
+    "unique": "D233KJ074128",
+    "name": "Board of Education Workshop 6:00 P.M.",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20240206",
+    "unid": "81FB691F569FF5DA85258AB700074128"
+  },
+  {
+    "unique": "D2EQDD68C97D",
+    "name": "Regular Meeting of the Board of Education 7:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20240227",
+    "unid": "D0EC0587839DE21B85258AC20068C97D"
+  },
+  {
+    "unique": "D2VQGT689BE0",
+    "name": "Special Meeting of the Board of Education 5:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20240305",
+    "unid": "317698EF912354FA85258AD100689BE0"
+  },
+  {
+    "unique": "D2VQH968A71C",
+    "name": "Board of Education Workshop 6:00 P.M.",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20240305",
+    "unid": "EC8593828255863785258AD10068A71C"
+  },
+  {
+    "unique": "D35LBN553E71",
+    "name": "Regular Meeting of the Board of Education 7:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20240319",
+    "unid": "E432223F14EA9E3285258AD900553E71"
+  },
+  {
+    "unique": "D3WR5V6C4E63",
+    "name": "Board of Education Workshop 6:00 P.M.",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20240402",
+    "unid": "F3522F00136DCFA085258AF2006C4E63"
+  },
+  {
+    "unique": "D46LSN572032",
+    "name": "Regular Meeting of the Board of Education 7:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20240416",
+    "unid": "9270A045BF1400CE85258AFA00572032"
+  },
+  {
+    "unique": "D4NL2L54567D",
+    "name": "Board of Education Workshop 6:00 P.M.",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20240507",
+    "unid": "428FDC4D010171A885258B0A0054567D"
+  },
+  {
+    "unique": "D4NL2Z547270",
+    "name": "Special Meeting of the Board of Education 5:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20240507",
+    "unid": "CAEBA68C718C5BD185258B0A00547270"
+  },
+  {
+    "unique": "D4NKZE54493B",
+    "name": "Regular Meeting of the Board of Education 7:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20240521",
+    "unid": "B286FAC9C3CFED8985258B0A0054493B"
+  },
+  {
+    "unique": "D5RJ554B74AD",
+    "name": "Special Meeting of the Board of Education 5:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20240606",
+    "unid": "99A1366906A67BBE85258B2D004B74AD"
+  },
+  {
+    "unique": "D5RJ5H4B7E30",
+    "name": "Board of Education Workshop 6:00 P.M.",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20240606",
+    "unid": "708FC045DAAD56B085258B2D004B7E30"
+  },
+  {
+    "unique": "D65NST614C9F",
+    "name": "Special Meeting of the Board of Education 8:00 AM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20240612",
+    "unid": "246B59EACE14E0B585258B3900614C9F"
+  },
+  {
+    "unique": "D68LKV56FC14",
+    "name": "Regular Meeting of the Board of Education 7:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20240620",
+    "unid": "283D271ACD1DEC1585258B3C0056FC14"
+  },
+  {
+    "unique": "D6YNG25F8F2A",
+    "name": "Regular Meeting of the Board of Education 9:30 AM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20240716",
+    "unid": "7CE8D9798CCC72B485258B54005F8F2A"
+  },
+  {
+    "unique": "D77JF94CEFDB",
+    "name": "Regular Meeting of the Board of Education 6:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20240820",
+    "unid": "5B42D2C7A76D83C485258B5B004CEFDB"
+  },
+  {
+    "unique": "D86P6563083F",
+    "name": "Special Meeting of the Board of Education 5:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20240820",
+    "unid": "844D85E6180B45D885258B7A0063083F"
+  },
+  {
+    "unique": "D8MLUV584EBB",
+    "name": "Board of Education Workshop 6:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20240903",
+    "unid": "2D4E33548BF4161D85258B8900584EBB"
+  },
+  {
+    "unique": "D8ZJ6849A156",
+    "name": "Regular Meeting of the Board of Education 7:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20240917",
+    "unid": "5BFAF8DBD77E8D3C85258B950049A156"
+  },
+  {
+    "unique": "D9GQ5L67A448",
+    "name": "Board of Education Workshop 6:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20241001",
+    "unid": "CA0DED0CD2D121F385258BA40067A448"
+  },
+  {
+    "unique": "D96RN96EC3DC",
+    "name": "Regular Meeting of the Board of Education 7:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20241015",
+    "unid": "ABF3CDFAD699F9EB85258B9A006EC3DC"
+  },
+  {
+    "unique": "DAQK9F50C69C",
+    "name": "Board of Education Workshop 6:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20241112",
+    "unid": "1CC6847364EB888B85258BCC0050C69C"
+  },
+  {
+    "unique": "DAQQBB687CE3",
+    "name": "Regular Meeting of the Board of Education 7:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20241119",
+    "unid": "726621703235818885258BCC00687CE3"
+  },
+  {
+    "unique": "DBDPK364EF28",
+    "name": "Board of Education Workshop 6:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20241203",
+    "unid": "BBD73C18FAF2A52B85258BE10064EF28"
+  },
+  {
+    "unique": "DBTMEY5AF5B3",
+    "name": "Regular Meeting of the Board of Education 7:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20241217",
+    "unid": "F3662C2F33C3B22F85258BEF005AF5B3"
+  },
+  {
+    "unique": "DCRLWR58904A",
+    "name": "Board of Education Workshop 6:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20250114",
+    "unid": "CC17AB1A7FCF32CB85258C0D0058904A"
+  },
+  {
+    "unique": "DCRMZX5DBC57",
+    "name": "Organizational and Regular Meeting of the Board of Education 7:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20250121",
+    "unid": "F5F2D412F189393785258C0D005DBC57"
+  },
+  {
+    "unique": "DDBPRZ65F158",
+    "name": "Board of Education Workshop 6:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20250211",
+    "unid": "9AC7811E24B564AC85258C1F0065F158"
+  },
+  {
+    "unique": "DDSUUF7DBF46",
+    "name": "Regular Meeting of the Board of Education 7:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20250225",
+    "unid": "62123CA5914B8AD085258C2E007DBF46"
+  },
+  {
+    "unique": "DE8SWM74AFF0",
+    "name": "Board of Education Workshop 6:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20250304",
+    "unid": "A72E1D2AD548C63585258C3C0074AFF0"
+  },
+  {
+    "unique": "DE8SXA74C8F9",
+    "name": "Board of Education Winter Retreat 8:30 AM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20250308",
+    "unid": "4F725313278E700385258C3C0074C8F9"
+  },
+  {
+    "unique": "DEQPJ46473D7",
+    "name": "Regular Meeting of the Board of Education 7:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20250318",
+    "unid": "386A6EDCC0D2323185258C4C006473D7"
+  },
+  {
+    "unique": "DF7TFZ773C76",
+    "name": "Board of Education Workshop 6:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20250401",
+    "unid": "AC047CBEAFC897CC85258C5B00773C76"
+  },
+  {
+    "unique": "DFKQ8C680D38",
+    "name": "Regular Meeting of the Board of Education 7:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20250422",
+    "unid": "9C694031C70EE6AB85258C6700680D38"
+  },
+  {
+    "unique": "DFXJVD4F026C",
+    "name": "Special Meeting of the Board of Education 6:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20250422",
+    "unid": "3A0A30020B8D495E85258C73004F026C"
+  },
+  {
+    "unique": "DG7NRV613F09",
+    "name": "Board of Education Workshop 6:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20250506",
+    "unid": "A7F0B7E7E90D695C85258C7B00613F09"
+  },
+  {
+    "unique": "DG7PJD64BFBB",
+    "name": "Regular Meeting of the Board of Education 7:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20250520",
+    "unid": "B44B2CF87976B4DA85258C7B0064BFBB"
+  },
+  {
+    "unique": "DH3PZC670712",
+    "name": "Special Meeting of the Board of Education 5:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20250603",
+    "unid": "534941B398A67A4185258C9700670712"
+  },
+  {
+    "unique": "DH3Q7G6770D4",
+    "name": "Board of Education Workshop 6:00 P.M.",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20250603",
+    "unid": "0DD8DE18D915732685258C97006770D4"
+  },
+  {
+    "unique": "DH4M3E59442C",
+    "name": "Regular Meeting of the Board of Education 7:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20250617",
+    "unid": "58E9490688CB9AE585258C980059442C"
+  },
+  {
+    "unique": "DJER2D6BDDE8",
+    "name": "Regular Meeting of the Board of Education 9:30 AM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20250715",
+    "unid": "708EAD0D66C3734B85258CC2006BDDE8"
+  },
+  {
+    "unique": "DKJQLE69D189",
+    "name": "Regular Meeting of the Board of Education 6:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20250819",
+    "unid": "7A17AB19D8B7E76785258CE60069D189"
+  },
+  {
+    "unique": "DKYKGZ51E177",
+    "name": "Board of Education Workshop 6:00 P.M.",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20250902",
+    "unid": "1B914E655C5354B285258CF40051E177"
+  },
+  {
+    "unique": "DLDK8R50AA7F",
+    "name": "Regular Meeting of the Board of Education 7:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20250916",
+    "unid": "4482EE9B0B1B6F2485258D010050AA7F"
+  },
+  {
+    "unique": "DM2JSY4EA7F1",
+    "name": "Board of Education Workshop 6:00 P.M.",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20251007",
+    "unid": "EDB84462073C8E3885258D16004EA7F1"
+  },
+  {
+    "unique": "DM2JVT4F11F3",
+    "name": "Regular Meeting of the Board of Education 7:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20251014",
+    "unid": "A5F9011CF26A309785258D16004F11F3"
+  },
+  {
+    "unique": "DN6KUL539426",
+    "name": "Board of Education Workshop 6:00 P.M.",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20251111",
+    "unid": "E8AD34B3A859272C85258D3A00539426"
+  },
+  {
+    "unique": "DN6KWP53E3C6",
+    "name": "Regular Meeting of the Board of Education 7:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20251118",
+    "unid": "C42219BD7598862A85258D3A0053E3C6"
+  },
+  {
+    "unique": "DN6L2T547C02",
+    "name": "Board of Education Workshop 6:00 P.M.",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20251209",
+    "unid": "2C66AA9DFB84374C85258D3A00547C02"
+  },
+  {
+    "unique": "DN6L8N54D873",
+    "name": "Regular Meeting of the Board of Education 7:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20251216",
+    "unid": "9AA2806D9A28F88D85258D3A0054D873"
+  },
+  {
+    "unique": "DN6L4B54B680",
+    "name": "Board of Education Workshop 6:00 P.M.",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20260113",
+    "unid": "EB25C40C1C970CD285258D3A0054B680"
+  },
+  {
+    "unique": "DQ4N6W5E576E",
+    "name": "Special Meeting of the Board of Education 5:30 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20260113",
+    "unid": "C87B38DC7530597185258D78005E576E"
+  },
+  {
+    "unique": "DQ4NP660D8C6",
+    "name": "Organizational and Regular Meeting of the Board of Education 7:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20260120",
+    "unid": "B323ABEAB48A26EA85258D780060D8C6"
+  },
+  {
+    "unique": "DQJK9C50A05E",
+    "name": "Board of Education Workshop 6:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20260203",
+    "unid": "2EBF2C6245828ABA85258D860050A05E"
+  },
+  {
+    "unique": "DQJK9Z50A633",
+    "name": "Regular Meeting of the Board of Education 7:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20260224",
+    "unid": "B4A38343775EBB1185258D860050A633"
+  },
+  {
+    "unique": "DRLT5D74D946",
+    "name": "Board of Education Workshop 6:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20260303",
+    "unid": "42A049BB8F0A9AA885258DA80074D946"
+  },
+  {
+    "unique": "DRLTFB7722E5",
+    "name": "Winter Board of Education Retreat 8:30 AM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20260307",
+    "unid": "FA6C6C94F310740085258DA8007722E5"
+  },
+  {
+    "unique": "DRLTJU77A713",
+    "name": "Regular Meeting of the Board of Education 7:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20260317",
+    "unid": "DC9FA43EDE49BFB585258DA80077A713"
+  },
+  {
+    "unique": "DRUQY86B5A15",
+    "name": "Special Meeting of the Board of Education 6:00 PM",
+    "current": "0",
+    "preliveoak": "",
+    "numberdate": "20260317",
+    "unid": "58DD6D4D31CCA0D685258DB0006B5A15"
+  },
+  {
+    "unique": "DS9LBG55BDB5",
+    "name": "Board of Education Workshop 6:15 PM",
+    "current": "1",
+    "preliveoak": "",
+    "numberdate": "20260407",
+    "unid": "49A2924A1E0C2AD285258DBD0055BDB5"
+  },
+  {
+    "unique": "DSHMVU5D2395",
+    "name": "Special Meeting of the Board of Education 6:00 PM",
+    "current": "1",
+    "preliveoak": "",
+    "numberdate": "20260407",
+    "unid": "8B11A95E9EAD978F85258DC5005D2395"
+  },
+  {
+    "unique": "DS9LBW55C2FB",
+    "name": "Special Meeting of the Board of Education 9:30 AM",
+    "current": "1",
+    "preliveoak": "",
+    "numberdate": "20260414",
+    "unid": "6517704802012B9285258DBD0055C2FB"
+  },
+  {
+    "unique": "DSWQXY6B83BF",
+    "name": "Regular Meeting of the Board of Education 7:00 PM",
+    "current": "1",
+    "preliveoak": "",
+    "numberdate": "20260421",
+    "unid": "36938FC809D8956285258DD2006B83BF"
+  },
+  {
+    "unique": "DSWSCD7204AE",
+    "name": "Board of Education Workshop 6:00 PM",
+    "current": "1",
+    "preliveoak": "",
+    "numberdate": "20260428",
+    "unid": "E56BAA7A26F9A72085258DD2007204AE"
+  },
+  {
+    "unique": "DTCSKW731F25",
+    "name": "Special Meeting of the Board of Education 5:30 PM",
+    "current": "1",
+    "preliveoak": "",
+    "numberdate": "20260428",
+    "unid": "1468C21D3130352685258DE000731F25"
+  }
+]

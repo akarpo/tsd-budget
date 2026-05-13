@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Why does Troy School District (Michigan) face a $5-12M structural operating deficit? A data-driven analysis covering FY15-FY29, sourced entirely from audited financial reports and the district's own check register.">
+<title>Why Troy School District Is in a Structural Deficit — A Data-Driven Explanation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg: #faf8f3;
+    --bg-elevated: #ffffff;
+    --rule: #e6e2d6;
+    --rule-strong: #c5bfae;
+    --text: #1a1a1a;
+    --text-soft: #5a5a5a;
+    --text-faint: #8a8a8a;
+    --accent: #b8442f;        /* burnt sienna for accent */
+    --accent-soft: #f4dcd2;
+    --positive: #2e6e4f;
+    --positive-soft: #d4e8db;
+    --negative: #a93d2c;
+    --negative-soft: #f0d6cf;
+    --neutral: #7a6f55;
+    --chart-1: #b8442f;
+    --chart-2: #2e6e4f;
+    --chart-3: #4a6b8a;
+    --chart-4: #c08a3e;
+    --chart-5: #7a6f55;
+    --chart-6: #8b5a8c;
+    --max-prose: 680px;
+    --max-wide: 1100px;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 19px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  .container { max-width: var(--max-wide); margin: 0 auto; padding: 0 28px; }
+  .prose { max-width: var(--max-prose); margin: 0 auto; }
+  .wide { max-width: var(--max-wide); margin: 0 auto; }
+
+  /* Typography */
+  h1, h2, h3, h4 {
+    font-family: 'Inter', system-ui, sans-serif;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin: 0 0 0.4em;
+  }
+  h1 { font-size: clamp(2rem, 5vw, 3.4rem); font-weight: 700; letter-spacing: -0.02em; }
+  h2 { font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 700; margin-top: 1.4em; }
+  section > .container > .prose > h2:first-child,
+  section > .container > h2:first-child { margin-top: 0; }
+  h3 { font-size: 1.3rem; font-weight: 600; margin-top: 2em; color: var(--text); }
+  h4 { font-size: 1.05rem; font-weight: 600; margin-top: 1.6em; color: var(--text-soft); text-transform: uppercase; letter-spacing: 0.04em; }
+  p { margin: 0 0 1.1em; }
+  a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-soft); transition: border-color .15s; }
+  a:hover { border-bottom-color: var(--accent); }
+  strong { font-weight: 600; }
+  em { font-style: italic; color: var(--text); }
+
+  /* Header / masthead */
+  .masthead {
+    border-bottom: 1px solid var(--rule);
+    padding: 16px 0;
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(250, 248, 243, 0.94);
+    backdrop-filter: blur(6px);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+  }
+  .masthead-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+  .brand { font-weight: 600; letter-spacing: -0.01em; color: var(--text); }
+  .brand a { color: var(--text); border: none; }
+  .nav-meta { color: var(--text-faint); display: flex; gap: 18px; align-items: center; }
+  .nav-meta a { color: var(--text-soft); border: none; }
+  .nav-meta a:hover { color: var(--accent); }
+
+  /* Hero */
+  .hero { padding: 60px 0 30px; }
+  .kicker {
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.78rem;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 18px;
+  }
+  .deck {
+    font-family: 'Source Serif 4', serif;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    color: var(--text-soft);
+    margin: 18px 0 32px;
+    font-weight: 400;
+  }
+  .byline {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-faint);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    padding: 14px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: center;
+  }
+  .byline strong { color: var(--text); font-weight: 500; }
+  .byline-divider { color: var(--rule-strong); }
+
+  /* TL;DR */
+  .tldr {
+    margin: 50px auto;
+    padding: 28px 32px;
+    background: var(--bg-elevated);
+    border-left: 4px solid var(--accent);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+    max-width: var(--max-prose);
+  }
+  .tldr h4 { margin-top: 0; color: var(--accent); }
+  .tldr p { margin-bottom: 0.7em; }
+  .tldr p:last-child { margin-bottom: 0; }
+
+  /* Sections */
+  section { padding: 12px 0; }
+  .section-divider {
+    text-align: center;
+    margin: 28px 0;
+    color: var(--text-faint);
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 0.3em;
+    font-size: 0.8rem;
+  }
+
+  /* Pull quotes / callouts */
+  .pull-quote {
+    font-size: 1.6rem;
+    line-height: 1.35;
+    color: var(--accent);
+    font-style: italic;
+    border-left: 3px solid var(--accent);
+    padding-left: 28px;
+    margin: 40px 0;
+    max-width: 600px;
+  }
+  .pull-quote cite {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-faint);
+    font-style: normal;
+    font-family: 'Inter', sans-serif;
+    margin-top: 12px;
+    letter-spacing: 0.02em;
+  }
+
+  /* Stat callouts */
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    margin: 28px 0;
+  }
+  .stat {
+    padding: 22px 24px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+  }
+  .stat-number {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .stat-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    color: var(--text-soft);
+    line-height: 1.4;
+  }
+
+  /* Chart container */
+  .chart-block {
+    margin: 32px auto;
+    max-width: var(--max-wide);
+  }
+  .chart-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text);
+    margin: 0 0 4px;
+  }
+  .chart-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.88rem;
+    color: var(--text-soft);
+    margin: 0 0 18px;
+    font-weight: 400;
+  }
+  .chart-wrap {
+    background: var(--bg-elevated);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 24px;
+    position: relative;
+  }
+  .chart-canvas-wrap { position: relative; height: 380px; }
+  .chart-source {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.78rem;
+    color: var(--text-faint);
+    margin-top: 14px;
+    line-height: 1.5;
+  }
+  .chart-source a { color: var(--text-soft); border-bottom-color: var(--rule-strong); }
+
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.92rem;
+    margin: 20px 0;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--rule);
+  }
+  th {
+    font-weight: 600;
+    color: var(--text-soft);
+    background: var(--bg);
+    text-transform: uppercase;
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+  }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  tr.total td { font-weight: 600; border-top: 2px solid var(--rule-strong); }
+
+  /* Citations */
+  sup.cite {
+    color: var(--accent);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.68em;
+    margin-left: 1px;
+    font-weight: 600;
+    line-height: 1;
+  }
+  sup.cite a { border: none; padding: 0 1px; }
+  sup.cite a:hover { background: var(--accent-soft); border-radius: 2px; }
+
+  /* Per-section collapsible sources */
+  .section-sources {
+    margin: 28px auto 4px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.88rem;
+    background: var(--bg-elevated);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    max-width: var(--max-prose);
+  }
+  .section-sources summary {
+    padding: 12px 18px;
+    cursor: pointer;
+    color: var(--text-soft);
+    font-weight: 500;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    user-select: none;
+  }
+  .section-sources summary::-webkit-details-marker { display: none; }
+  .section-sources summary::before {
+    content: '▸';
+    display: inline-block;
+    font-size: 0.8em;
+    color: var(--accent);
+    transition: transform 0.15s;
+  }
+  .section-sources[open] summary::before { transform: rotate(90deg); }
+  .section-sources summary:hover { color: var(--accent); }
+  .section-sources ol {
+    margin: 0;
+    padding: 8px 22px 18px 44px;
+    border-top: 1px solid var(--rule);
+    background: var(--bg);
+  }
+  .section-sources li {
+    margin: 14px 0 0;
+    color: var(--text-soft);
+    line-height: 1.55;
+  }
+  .section-sources li a { color: var(--accent); border-bottom-color: var(--accent-soft); }
+  .section-sources li[id]:target {
+    background: var(--accent-soft);
+    margin-left: -8px;
+    margin-right: -12px;
+    padding: 8px 12px;
+    border-radius: 3px;
+    transition: background .25s;
+  }
+  .section-sources .source-meta {
+    color: var(--text-faint);
+    font-size: 0.85em;
+  }
+
+  /* Footer */
+  footer {
+    margin-top: 100px;
+    padding: 50px 0 80px;
+    background: var(--bg-elevated);
+    border-top: 1px solid var(--rule);
+    color: var(--text-soft);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.88rem;
+  }
+  footer h4 { color: var(--text); margin-top: 0; }
+  footer ol { padding-left: 20px; }
+  footer li { margin-bottom: 10px; line-height: 1.5; }
+  footer a { color: var(--text-soft); border-bottom-color: var(--rule-strong); }
+  footer a:hover { color: var(--accent); }
+  .colophon { color: var(--text-faint); font-size: 0.82rem; margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--rule); }
+
+  /* Status badge */
+  .status-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    background: var(--accent-soft);
+    color: var(--accent);
+    border-radius: 12px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    vertical-align: middle;
+    margin-left: 8px;
+  }
+
+  /* Responsive */
+  @media (max-width: 640px) {
+    body { font-size: 17px; }
+    .container { padding: 0 18px; }
+    .chart-canvas-wrap { height: 320px; }
+    .pull-quote { font-size: 1.25rem; padding-left: 18px; }
+    .tldr { padding: 22px 22px; }
+    .stat-grid { gap: 14px; }
+    .stat-number { font-size: 1.7rem; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="container masthead-inner">
+    <div class="brand"><a href="#top">Troy School District · Budget Analysis</a></div>
+    <nav class="nav-meta">
+      <a href="#deficit-math">The math</a>
+      <a href="#sped">Special ed</a>
+      <a href="#growth-rates">Growth rates</a>
+      <a href="https://github.com/akarpo/tsd-budget">Source</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<div class="container">
+  <article class="hero prose">
+    <div class="kicker">Working analysis · May 2026 <span class="status-badge">draft</span></div>
+    <h1>Why Troy School District is in a structural deficit</h1>
+    <p class="deck">
+      The board has been told the district needs $12 million in annual cuts. The deficit is not a Covid hangover or an enrollment cliff alone — it is the cumulative result of four structural shifts that began years before the 2025-26 budget. Here is what the audited financials, check register, and source documents actually show.
+    </p>
+    <div class="byline">
+      <span><strong>Sources:</strong> 5 audited ACFRs (Plante Moran), FY26 4-Year General Fund Projection (Trudel, Feb 2026), Special Ed Update (Oct 2025), Levenson SpEd report (Dec 2023), board presentations FY20-FY26, check register reconciliation (224,267 line items / $1.23B, FY11-FY26).</span>
+    </div>
+  </article>
+
+  <!-- TL;DR -->
+  <aside class="tldr">
+    <h4>The argument in 200 words</h4>
+    <p>Troy School District (TSD) faces a projected operating deficit of <strong>$5-12 million per year through FY29</strong>. Without action, the gap compounds — comp alone grows ~$7M/year while revenue is flat at ~$193M.</p>
+    <p>The deficit has four structural drivers, ranked by dollar impact: <strong>retiree benefits</strong> (MPSERS pension + OPEB added $16.2M of annual cost since FY18); <strong>special education</strong> (a $9M/year general-fund subsidy that grew $2.7M in 4 years); <strong>active-employee health insurance</strong> (+$5.8M); and the <strong>ESSER cliff</strong> (~$30M of one-time federal money that funded staff who became baseline).</p>
+    <p>Salaries themselves grew at general-inflation pace (3.2% CAGR). The cost pressure is in the benefits stack and the SpEd-staffing buildup — not in teacher pay. For every $1 of salary in FY24, TSD now pays $0.69 in benefits, up from $0.53 in FY18.</p>
+    <p>The "$12M cuts" is a one-time FY27 calibration. The full published plan calls for <strong>$24.2M in cumulative cuts over three years</strong>.</p>
+  </aside>
+</div>
+
+<div class="section-divider">·  ·  ·</div>
+
+<!-- PART 1: THE DEFICIT MATH -->
+<section id="deficit-math">
+<div class="container">
+  <div class="prose">
+    <h2>1. The deficit math</h2>
+    <p>
+      In February 2026, the district shared a four-year General Fund forecast with its Finance Committee. The math is unambiguous: operating revenue is projected to stay essentially flat at <strong>~$193 million</strong> through FY29, while operating expenditures want to grow about <strong>$7 million per year</strong> on autopilot.<sup class="cite"><a href="#s1-src-1">1</a></sup>
+    </p>
+    <p>
+      The result, before cuts, is a structural deficit that would compound to roughly <strong>$19 million per year by FY29</strong> if nothing changes.<sup class="cite"><a href="#s1-src-1">1</a></sup> The plan calls for <strong>$12.35M in cost reductions for FY27</strong>, then $4.1M and $7.75M in the following two years — <strong>$24.2M cumulative over three years</strong>.<sup class="cite"><a href="#s1-src-1">1</a></sup>
+    </p>
+  </div>
+
+  <!-- Chart 1: deficit projection -->
+  <div class="chart-block">
+    <div class="chart-title">Operating revenue versus operating expenditures, FY25-FY29</div>
+    <div class="chart-subtitle">Without the planned $24.2M in cuts (dashed line), the FY29 deficit would reach about $19M.</div>
+    <div class="chart-wrap">
+      <div class="chart-canvas-wrap"><canvas id="chart-deficit"></canvas></div>
+      <div class="chart-source">
+        Source: TSD General Fund 4-Year Projection (February 2026), prepared by Dan Trudel, CPA, Assistant Superintendent of Business Services.
+        <a href="inputs/General%20Fund%20-%20FY26%204-Year%20Projections.xlsx">Download the workbook</a>.
+      </div>
+    </div>
+  </div>
+
+  <div class="prose">
+    <p>
+      The published cost-reduction plan is not just about closing the deficit. <strong>About $2.7M of the FY27 cut</strong> goes to rebuilding fund balance from <strong>13.6% back to the board's 15% target</strong>.<sup class="cite"><a href="#s1-src-1">1</a></sup> The remaining ~$9.3M closes the operating gap and offsets ongoing comp inflation. The plan also assumes the state's FY25-onward shift to direct MPSERS UAAL contributions ("$498 per pupil equivalent" per the FY24 ACFR's Management's Discussion &amp; Analysis<sup class="cite"><a href="#s1-src-2">2</a></sup>) continues — itself a forecast that any change in state policy would undermine.
+    </p>
+  </div>
+
+  <!-- Stat callouts -->
+  <div class="container">
+    <div class="stat-grid">
+      <div class="stat">
+        <div class="stat-number">$5.1M<sup class="cite"><a href="#s1-src-1">1</a></sup></div>
+        <div class="stat-label">FY25 audited operating deficit</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">$12.1M<sup class="cite"><a href="#s1-src-1">1</a></sup></div>
+        <div class="stat-label">FY26 projected operating deficit (Amendment #2)</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">$24.2M<sup class="cite"><a href="#s1-src-1">1</a></sup></div>
+        <div class="stat-label">Cumulative cuts in the 3-year plan (FY27-FY29)</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">13.6%<sup class="cite"><a href="#s1-src-1">1</a></sup></div>
+        <div class="stat-label">Fund balance as % of expenditures (vs. 15% target)</div>
+      </div>
+    </div>
+  </div>
+
+  <details class="section-sources">
+    <summary>Sources for this section</summary>
+    <ol>
+      <li id="s1-src-1">
+        <strong>TSD General Fund 4-Year Projection</strong> (February 2026).
+        Excel workbook prepared by Dan Trudel, CPA, Assistant Superintendent of Business Services. Contains FY25 audit actuals, FY26 Amendment #2, and forward projections through FY29 with itemized cost-reduction plan ($12.35M FY27 / $4.1M FY28 / $7.75M FY29).
+        <a href="inputs/General%20Fund%20-%20FY26%204-Year%20Projections.xlsx">Download workbook</a>.
+      </li>
+      <li id="s1-src-2">
+        <strong>TSD FY2024 ACFR — Management's Discussion and Analysis</strong> (pp. 4-9), "Economic Factors and Next Year's Budgets and Rates" (p. 9). Discloses that the 2024 State School Aid Act will offset MPSERS UAAL expenditures with a $498-per-pupil equivalent for the school district in 2024-2025, instead of a traditional foundation allowance increase. This state-pass-through dynamic explains why the projection workbook shows MPSERS expense declining from $36.6M (FY24 audit) to $30.5M (FY26 projection) on the expense side even as comp pressure continues.
+        <a href="boarddocs/20241119_audit_8.B._24680_Troy_School_District_ACFR_0624_FS_Final.pdf.r2.md">ACFR (large file on R2)</a>.
+      </li>
+    </ol>
+  </details>
+
+</div>
+</section>
+
+<div class="section-divider">·  ·  ·</div>
+
+<!-- PART 2: WHAT GREW (10-YEAR BASELINE) -->
+<section id="what-grew">
+<div class="container">
+  <div class="prose">
+    <h2>2. What actually grew, FY15-FY24</h2>
+    <p>
+      Cost growth at TSD has been steady and structural, not Covid-shock-and-recover. The FY24 Annual Comprehensive Financial Report — audited by Plante Moran — contains a <strong>ten-year statistical section</strong> that lets us see the full arc.<sup class="cite"><a href="#s2-src-1">1</a></sup>
+    </p>
+    <p>
+      The single cleanest measure is operating cost <em>per student</em>. It grew from <strong>$10,924 in FY15 to $15,383 in FY24</strong> — a <strong>40% increase, or 5.5% per year</strong> compounding through the second half of the period.<sup class="cite"><a href="#s2-src-1">1</a></sup> Enrollment over the same period barely moved net (<strong>12,563 → 12,447</strong>), but Covid took out a 600-student layer between FY20's peak (<strong>13,073</strong>) and FY22 (<strong>12,519</strong>) that hasn't returned.<sup class="cite"><a href="#s2-src-1">1</a></sup>
+    </p>
+  </div>
+
+  <!-- Chart 2: per-pupil cost over time -->
+  <div class="chart-block">
+    <div class="chart-title">General Fund cost per pupil, FY15-FY24</div>
+    <div class="chart-subtitle">Up 40% in nine years. The post-Covid acceleration (FY22 onward) reflects salary CBA progressions, MPSERS rate increases, MESSA premium inflation, and new SpEd staffing layers — not enrollment growth (enrollment is shrinking).</div>
+    <div class="chart-wrap">
+      <div class="chart-canvas-wrap"><canvas id="chart-per-pupil"></canvas></div>
+      <div class="chart-source">
+        Source: TSD FY2024 ACFR, Operating Indicators (Statistical Section, p77). Plante Moran, audited Oct 28, 2024.
+        <a href="boarddocs/20241119_audit_8.B._24680_Troy_School_District_ACFR_0624_FS_Final.pdf.r2.md">ACFR documentation</a>.
+      </div>
+    </div>
+  </div>
+
+  <div class="prose">
+    <p>
+      Total operating expenditures (governmental funds) grew from <strong>$181 million in FY15 to $269 million in FY24</strong> — up $88 million, or <strong>49% over nine years</strong>.<sup class="cite"><a href="#s2-src-1">1</a></sup> About one-third of that increase happened between FY22 and FY24 alone, the period when the post-Covid Edustaff buildup, MESSA premium inflation, and the MPSERS UAAL stabilization rate all hit at the same time.
+    </p>
+  </div>
+
+  <details class="section-sources">
+    <summary>Sources for this section</summary>
+    <ol>
+      <li id="s2-src-1">
+        <strong>TSD Annual Comprehensive Financial Report, fiscal year ended June 30, 2024</strong>. Audited by Plante Moran, PLLC (audit report dated Oct 28, 2024). The Statistical Section (pp. 56-79) contains ten-year financial trends: Operating Indicators (cost per pupil, revenue per pupil, enrollment, teaching staff, F&amp;R meals, avg teacher salary) on p. 77; Changes in Fund Balances on pp. 64-65; Demographic and Operating Information on pp. 74-79.
+        <a href="boarddocs/20241119_audit_8.B._24680_Troy_School_District_ACFR_0624_FS_Final.pdf.r2.md">ACFR (large file on R2)</a>.
+      </li>
+    </ol>
+  </details>
+
+</div>
+</section>
+
+<div class="section-divider">·  ·  ·</div>
+
+<!-- PART 3: SPECIAL EDUCATION -->
+<section id="sped">
+<div class="container">
+  <div class="prose">
+    <h2>3. Special Education is a $9M-per-year general fund subsidy</h2>
+    <p>
+      The single most consequential line in TSD's budget that very few residents know about: <strong>the General Fund subsidizes Special Education by about $9 million a year, and that subsidy has grown $2.7M since FY21</strong>.<sup class="cite"><a href="#s3-src-1">1</a></sup>
+    </p>
+    <p>
+      Per the Special Education Update presented to the board on October 7, 2025, TSD now spends <strong>$34.0M annually</strong> on special education programs and services — for <strong>1,367 students with IEPs</strong>.<sup class="cite"><a href="#s3-src-1">1</a></sup> State and federal sources (the 51c foundation, PA-18 county millage, IDEA flow-through, and Medicaid reimbursement) cover only <strong>$25.0M</strong> of that.<sup class="cite"><a href="#s3-src-1">1</a></sup> The remaining <strong>$9.0M</strong> comes from operating dollars that would otherwise go to general instruction.<sup class="cite"><a href="#s3-src-1">1</a></sup>
+    </p>
+  </div>
+
+  <!-- Chart 3: SpEd subsidy widening -->
+  <div class="chart-block">
+    <div class="chart-title">Special Education revenue vs. expenditures, FY21-FY25</div>
+    <div class="chart-subtitle">The gap is the General Fund subsidy. SpEd expenditures grew $8.4M (+33%) in four years; reimbursement-source revenue grew only $5.7M.</div>
+    <div class="chart-wrap">
+      <div class="chart-canvas-wrap"><canvas id="chart-sped"></canvas></div>
+      <div class="chart-source">
+        Source: TSD Special Education Department Update, October 7, 2025 (board workshop deck slides 13-15, "Five-Year Special Education Funding History").
+        <a href="boarddocs/20251007_sped_update_SE_UpdatePresentation_100725.pptx.r2.md">Presentation documentation</a>.
+      </div>
+    </div>
+  </div>
+
+  <div class="prose">
+    <p>
+      TSD is not unusual in this. According to a state-commissioned report released in October 2025, Michigan reimburses only <strong>28.6% of district SpEd costs — among the lowest rates in the country</strong>.<sup class="cite"><a href="#s3-src-2">2</a></sup> Every Michigan district fills the gap from its operating budget. The proposed fix is a six-year transition to a tiered-funding system at an estimated cost of <strong>$4.55 billion statewide</strong>.<sup class="cite"><a href="#s3-src-2">2</a></sup> Until that passes, the $9M annual subsidy in Troy is a feature of the system, not an anomaly.
+    </p>
+
+    <p class="pull-quote">
+      "The district has the desire and ability to serve students with severe needs in-district with its broad range of supports and services… very few students are required to attend out of district programs."
+      <cite>— New Solutions K12 (Levenson) special-education review, December 2023, Commendation #5<sup class="cite"><a href="#s3-src-3">3</a></sup></cite>
+    </p>
+
+    <p>
+      That December 2023 outside review — commissioned by TSD and authored by Nathan Levenson's firm New Solutions K12 — actually <em>recommended fewer paraprofessionals over time</em>, achieved through "natural attrition."<sup class="cite"><a href="#s3-src-3">3</a></sup> The check register tells the opposite story: the district has added approximately <strong>100 contracted Health Care Aides since FY22</strong>, sourced through Edustaff.<sup class="cite"><a href="#s3-src-3">3</a></sup> The trajectory of those costs is the next chart.
+    </p>
+  </div>
+
+  <details class="section-sources">
+    <summary>Sources for this section</summary>
+    <ol>
+      <li id="s3-src-1">
+        <strong>Special Education Department Update</strong>, Troy School District Board of Education Workshop, October 7, 2025. 16-slide deck presented by the SpEd leadership team. Slides 13-15 contain the five-year Special Education Funding History showing total revenue, expenditures by category, and the General Fund subsidy (FY21-FY25).
+        <a href="boarddocs/20251007_sped_update_SE_UpdatePresentation_100725.pptx.r2.md">Presentation (large file on R2)</a>.
+      </li>
+      <li id="s3-src-2">
+        <strong>"Report calls for overhaul of Michigan special education funding system"</strong>, Chalkbeat Detroit, October 30, 2025. Coverage of a state-commissioned report (Michigan Legislature, 2024) finding that Michigan reimburses only 28.6% of district SpEd costs — among the lowest rates in the country. Proposes tiered funding ($11K low-needs / $39K intensive) plus an 80% reimbursement above $57,615/student threshold, phased over six years at $4.55B.
+        <a href="https://www.chalkbeat.org/detroit/2025/10/30/report-calls-for-overhaul-michigan-special-education-funding/">Read article</a>.
+      </li>
+      <li id="s3-src-3">
+        <strong>"Improving Outcomes and Equity for Students with Disabilities and Other Students who Struggle"</strong> — Troy School District. New Solutions K12 (Nathan Levenson, principal), December 2023. 32-page review based on 130+ stakeholder interviews. Page 11 notes the district "currently spends over two million dollars on student support aides… plus 100 contracted full-time paraprofessionals" and explicitly recommends reducing this through attrition: <em>"fewer paraprofessionals or student support aides will be needed."</em>
+        <a href="boarddocs/2023-12-08_Levenson_NSK12_Findings_Report.pdf">Read the full report</a>.
+      </li>
+    </ol>
+  </details>
+
+</div>
+</section>
+
+<div class="section-divider">·  ·  ·</div>
+
+<!-- PART 4: THREE-CATEGORY GROWTH RATES -->
+<section id="growth-rates">
+<div class="container">
+  <div class="prose">
+    <h2>4. The cost-growth ranking</h2>
+    <p>
+      One way to understand the deficit is to ask which categories of district spending have grown faster than others. Over the six years from FY18 (the proper pre-Covid baseline) to FY24 (the most recent audited year), three categories stand out:
+    </p>
+  </div>
+
+  <!-- Chart 4: 3-category growth -->
+  <div class="chart-block">
+    <div class="chart-title">Growth of three cost categories vs. salaries, FY18-FY24</div>
+    <div class="chart-subtitle">Retiree benefits added the most dollars; outsourced services grew fastest after the FY19 Covid trough. Salaries (the dotted reference) barely outpaced inflation.</div>
+    <div class="chart-wrap">
+      <div class="chart-canvas-wrap"><canvas id="chart-growth-rates"></canvas></div>
+      <div class="chart-source">
+        Sources: MPSERS contributions and OPEB contributions from the FY24 ACFR Schedule of Pension Contributions and Schedule of OPEB Contributions (RSI sections). MESSA and outsourced-services figures from check register reconciliation (vendor totals).
+        <a href="boarddocs/20241119_audit_8.B._24680_Troy_School_District_ACFR_0624_FS_Final.pdf.r2.md">ACFR documentation</a>.
+      </div>
+    </div>
+  </div>
+
+  <div class="prose">
+    <p>
+      <strong>Retiree benefits</strong> (MPSERS pension + OPEB retiree healthcare) added the most absolute dollars: <strong>$16.2 million per year</strong> between FY18 and FY24.<sup class="cite"><a href="#s4-src-1">1</a></sup> MPSERS alone grew from <strong>30.3% of payroll to 41.4%</strong> over that period, peaking at <strong>48.6% in FY23</strong>.<sup class="cite"><a href="#s4-src-1">1</a></sup> Most of that is now state pass-through under Section 147c, but it inflates the expense base regardless.
+    </p>
+    <p>
+      <strong>Active employee health insurance</strong> (MESSA) added <strong>$5.8M</strong>, growing at <strong>7.3% per year compounded</strong> — pure healthcare inflation on a major cost line.<sup class="cite"><a href="#s4-src-2">2</a></sup>
+    </p>
+    <p>
+      <strong>Outsourced services</strong> (the combination of Edustaff contract staffing, DM Burr custodial, and First Group transportation) added <strong>$3.5M</strong> and grew slowest in absolute terms — but if you start the clock at the FY19 vendor-consolidation trough rather than FY18, outsourcing grew at <strong>13.6% CAGR through FY24</strong>.<sup class="cite"><a href="#s4-src-2">2</a></sup> The choice of baseline matters; both views are honest.
+    </p>
+    <p>
+      <strong>Salaries</strong>, by contrast, grew only <strong>3.2% CAGR</strong> — roughly matching general inflation.<sup class="cite"><a href="#s4-src-1">1</a></sup> The narrative that "teacher pay is breaking the budget" is not supported by the data. Average teacher salary went from <strong>$74,442 (FY19) to $78,145 (FY24)</strong> — about 5% over five years, well under healthcare inflation, well under MPSERS rate growth.<sup class="cite"><a href="#s4-src-1">1</a></sup>
+    </p>
+  </div>
+
+  <div class="stat-grid">
+    <div class="stat">
+      <div class="stat-number">+$16.2M<sup class="cite"><a href="#s4-src-1">1</a></sup></div>
+      <div class="stat-label">Retiree benefits added per year (FY18→FY24)</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">+$5.8M<sup class="cite"><a href="#s4-src-2">2</a></sup></div>
+      <div class="stat-label">Active health insurance added</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">+$3.5M<sup class="cite"><a href="#s4-src-2">2</a></sup></div>
+      <div class="stat-label">Outsourced services added</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">+$15.2M<sup class="cite"><a href="#s4-src-1">1</a></sup></div>
+      <div class="stat-label">Salaries (reference)</div>
+    </div>
+  </div>
+
+  <details class="section-sources">
+    <summary>Sources for this section</summary>
+    <ol>
+      <li id="s4-src-1">
+        <strong>TSD FY24 ACFR — Required Supplementary Information</strong>. Specifically: <em>Schedule of Pension Contributions</em> (p. 42) — ten-year history of MPSERS statutorily required contributions and contributions as % of covered payroll (FY15 $12.5M / 17.6% → FY24 $36.6M / 41.4%; peak FY23 48.6%). <em>Schedule of OPEB Contributions</em> (p. 44) — seven-year history (FY18 $5.5M / 7.5% → FY24 $7.3M / 8.2%). <em>Operating Indicators</em> (p. 77) — covered payroll $73.15M (FY18) → $88.37M (FY24), average teacher salary $74,442 (FY19) → $78,145 (FY24).
+        <a href="boarddocs/20241119_audit_8.B._24680_Troy_School_District_ACFR_0624_FS_Final.pdf.r2.md">ACFR (large file on R2)</a>.
+      </li>
+      <li id="s4-src-2">
+        <strong>TSD check register reconciliation, FY11-FY26</strong>. 224,267 disbursement line items / $1.23 billion total. MESSA payments aggregated by vendor and FY (Fund 101 + other operating funds). Outsourced services = sum of contract-staffing vendors (Edustaff, Professional Ed Services, Educational Staffin, Temporary School ST, Safe Ed) + DM Burr Facilities + First Group America. Source dataset is a sibling project parsed from BoardDocs Treasurer's Reports.
+        <a href="https://github.com/akarpo/tsd-checkregister">tsd-checkregister repo</a>.
+      </li>
+    </ol>
+  </details>
+
+</div>
+</section>
+
+<div class="section-divider">·  ·  ·  more sections coming  ·  ·  ·</div>
+
+<div class="container">
+  <div class="prose">
+    <p style="color: var(--text-faint); font-style: italic;">
+      This is Phase 1 of the public-facing analysis. Phase 2 will add: the ESSER cliff and its overhang, the Edustaff Health Care Aide buildup in detail, vendor-by-vendor cost growth, FTE and outsourcing trends, property-tax and revenue-capacity context, and a synthesis section with the open questions. Charts will gain a year-range filter and a per-pupil-vs-total toggle.
+    </p>
+  </div>
+</div>
+
+</main>
+
+<footer>
+  <div class="container prose">
+    <h4>About this analysis</h4>
+    <p>
+      Compiled from public records by a Troy resident. Each section above carries its own collapsible source list. The full underlying writeup is <a href="https://github.com/akarpo/tsd-budget/blob/main/ANALYSIS.md">ANALYSIS.md</a> in the repo. Methodology, source documents, and analysis scripts are open at <a href="https://github.com/akarpo/tsd-budget">github.com/akarpo/tsd-budget</a>.
+    </p>
+    <p>
+      Errors and disagreements welcome — open an issue on GitHub or get in touch.
+    </p>
+
+    <div class="colophon">
+      <p>
+        Underlying data: 5 audited TSD ACFRs (FY21-FY25, Plante Moran), the FY26 General Fund 4-Year Projection (Feb 2026), the Levenson / New Solutions K12 SpEd Findings Report (Dec 2023), board presentations FY20-FY26, and a check-register reconciliation covering FY11-FY26 (224,267 line items / $1.23B in disbursements, sourced from <a href="https://github.com/akarpo/tsd-checkregister">tsd-checkregister</a>).
+      </p>
+      <p>
+        This site is a working draft. Last updated May 13, 2026.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ====================================================================
+// CITATION INTERACTION
+// Clicking a superscript citation opens the section's collapsible
+// sources panel (if it's closed) and scrolls the cited entry into view.
+// ====================================================================
+document.querySelectorAll('sup.cite a').forEach(link => {
+  link.addEventListener('click', (e) => {
+    const href = link.getAttribute('href');
+    if (!href || !href.startsWith('#')) return;
+    const target = document.querySelector(href);
+    if (!target) return;
+    // Open the enclosing <details> if any
+    const details = target.closest('details');
+    if (details && !details.open) details.open = true;
+  });
+});
+
+// ====================================================================
+// DATA
+// All figures in $M unless noted. Sources cited inline above each chart.
+// ====================================================================
+
+const DATA = {
+  // FY26 4-Year Projection — Operating revenue vs expenditures
+  deficit: {
+    years: ['FY25 audit', 'FY26 Amend #2', 'FY27', 'FY28', 'FY29'],
+    revenue: [188.5, 193.0, 193.8, 193.3, 192.8],
+    exp_with_cuts: [193.6, 205.0, 199.6, 198.3, 197.2],
+    // Without cuts, expenditures grow at ~$7M/yr from FY27 baseline
+    exp_no_cuts: [193.6, 205.0, 211.9, 218.7, 225.1],
+  },
+
+  // Operating indicators FY15-FY24 (from FY24 ACFR p77)
+  per_pupil: {
+    years: ['FY15','FY16','FY17','FY18','FY19','FY20','FY21','FY22','FY23','FY24'],
+    enrollment: [12563, 12731, 12932, 13034, 13061, 13073, 12723, 12519, 12540, 12447],
+    cost_per_pupil: [10924, 11016, 11101, 11565, 11766, 12000, 12942, 13780, 15104, 15383],
+    rev_per_pupil:  [10811, 11029, 11303, 11638, 11775, 12026, 13455, 13589, 15076, 15666],
+  },
+
+  // SpEd revenue vs expenditure (Oct 2025 SpEd Update)
+  sped: {
+    years: ['FY21','FY22','FY23','FY24','FY25'],
+    revenue: [19.25, 18.84, 21.16, 23.71, 24.97],
+    expenditures: [25.59, 27.11, 31.73, 33.31, 34.01],
+    subsidy: [-6.34, -8.28, -10.57, -9.60, -9.03],
+  },
+
+  // 3-category growth comparison FY18-FY24
+  growth: {
+    years: ['FY18','FY19','FY20','FY21','FY22','FY23','FY24'],
+    mpsers: [22.14, 23.85, 24.92, 27.15, 30.53, 41.85, 36.62],
+    opeb:   [ 5.50,  6.32,  6.39,  6.61,  6.82,  6.93,  7.26],
+    retiree:[27.64, 30.17, 31.31, 33.76, 37.35, 48.78, 43.88],
+    messa:  [11.10, 11.10,  4.40, 14.80, 12.60, 12.70, 16.90],
+    outsourced: [11.36, 7.82, 7.23, 8.48, 11.12, 14.06, 14.82],
+    salaries:   [73.15, 73.31, 79.54, 79.44, 83.64, 86.08, 88.37],
+  },
+};
+
+// ====================================================================
+// CHART DEFAULTS — newsroom-journalism aesthetic
+// ====================================================================
+
+Chart.defaults.font.family = "'Inter', system-ui, sans-serif";
+Chart.defaults.font.size = 12;
+Chart.defaults.color = '#1a1a1a';
+Chart.defaults.borderColor = '#e6e2d6';
+Chart.defaults.plugins.legend.labels.boxWidth = 10;
+Chart.defaults.plugins.legend.labels.boxHeight = 10;
+Chart.defaults.plugins.legend.labels.padding = 16;
+Chart.defaults.plugins.legend.labels.font = { family: "'Inter', sans-serif", size: 12 };
+Chart.defaults.plugins.tooltip.backgroundColor = 'rgba(26,26,26,0.94)';
+Chart.defaults.plugins.tooltip.titleFont = { family: "'Inter', sans-serif", weight: '600', size: 12 };
+Chart.defaults.plugins.tooltip.bodyFont = { family: "'Inter', sans-serif", size: 12 };
+Chart.defaults.plugins.tooltip.padding = 12;
+Chart.defaults.plugins.tooltip.cornerRadius = 4;
+Chart.defaults.plugins.tooltip.boxPadding = 6;
+
+const COLORS = {
+  accent: '#b8442f',
+  positive: '#2e6e4f',
+  blue: '#4a6b8a',
+  gold: '#c08a3e',
+  neutral: '#7a6f55',
+  purple: '#8b5a8c',
+  faint: '#c5bfae',
+};
+
+const dollarTooltip = {
+  callbacks: {
+    label: (ctx) => `${ctx.dataset.label}: $${ctx.parsed.y.toFixed(1)}M`,
+  },
+};
+
+const dollarAxis = {
+  ticks: { callback: (v) => `$${v}M` },
+  grid: { color: '#f0ecdf' },
+};
+
+const yearAxis = {
+  grid: { display: false },
+  ticks: { color: '#5a5a5a' },
+};
+
+// ====================================================================
+// CHART 1: DEFICIT PROJECTION
+// ====================================================================
+new Chart(document.getElementById('chart-deficit'), {
+  type: 'line',
+  data: {
+    labels: DATA.deficit.years,
+    datasets: [
+      {
+        label: 'Operating revenue',
+        data: DATA.deficit.revenue,
+        borderColor: COLORS.blue,
+        backgroundColor: COLORS.blue,
+        borderWidth: 3,
+        tension: 0.15,
+        pointRadius: 4,
+      },
+      {
+        label: 'Expenditures (with planned cuts)',
+        data: DATA.deficit.exp_with_cuts,
+        borderColor: COLORS.accent,
+        backgroundColor: COLORS.accent,
+        borderWidth: 3,
+        tension: 0.15,
+        pointRadius: 4,
+      },
+      {
+        label: 'Expenditures (no cuts scenario)',
+        data: DATA.deficit.exp_no_cuts,
+        borderColor: COLORS.accent,
+        backgroundColor: 'transparent',
+        borderDash: [6, 4],
+        borderWidth: 2,
+        tension: 0.15,
+        pointRadius: 3,
+        pointStyle: 'circle',
+      },
+    ],
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    interaction: { mode: 'index', intersect: false },
+    plugins: {
+      legend: { position: 'bottom' },
+      tooltip: dollarTooltip,
+    },
+    scales: {
+      x: yearAxis,
+      y: { ...dollarAxis, beginAtZero: false, suggestedMin: 180 },
+    },
+  },
+});
+
+// ====================================================================
+// CHART 2: COST PER PUPIL
+// ====================================================================
+new Chart(document.getElementById('chart-per-pupil'), {
+  type: 'line',
+  data: {
+    labels: DATA.per_pupil.years,
+    datasets: [
+      {
+        label: 'Operating cost per pupil',
+        data: DATA.per_pupil.cost_per_pupil,
+        borderColor: COLORS.accent,
+        backgroundColor: COLORS.accent,
+        borderWidth: 3,
+        tension: 0.2,
+        pointRadius: 4,
+      },
+      {
+        label: 'Operating revenue per pupil',
+        data: DATA.per_pupil.rev_per_pupil,
+        borderColor: COLORS.blue,
+        backgroundColor: COLORS.blue,
+        borderWidth: 2,
+        tension: 0.2,
+        pointRadius: 3,
+        borderDash: [4, 3],
+      },
+    ],
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    interaction: { mode: 'index', intersect: false },
+    plugins: {
+      legend: { position: 'bottom' },
+      tooltip: {
+        callbacks: { label: (ctx) => `${ctx.dataset.label}: $${ctx.parsed.y.toLocaleString()}` },
+      },
+    },
+    scales: {
+      x: yearAxis,
+      y: {
+        ticks: { callback: (v) => `$${(v/1000).toFixed(0)}K` },
+        grid: { color: '#f0ecdf' },
+        suggestedMin: 10000,
+      },
+    },
+  },
+});
+
+// ====================================================================
+// CHART 3: SPED SUBSIDY
+// ====================================================================
+new Chart(document.getElementById('chart-sped'), {
+  type: 'bar',
+  data: {
+    labels: DATA.sped.years,
+    datasets: [
+      {
+        label: 'Total SpEd revenue (state aid + PA-18 + IDEA + Medicaid)',
+        data: DATA.sped.revenue,
+        backgroundColor: COLORS.positive,
+        borderRadius: 2,
+        order: 2,
+      },
+      {
+        label: 'Total SpEd expenditures',
+        data: DATA.sped.expenditures,
+        backgroundColor: 'transparent',
+        borderColor: COLORS.accent,
+        borderWidth: 2.5,
+        type: 'line',
+        tension: 0,
+        pointRadius: 5,
+        pointBackgroundColor: COLORS.accent,
+        order: 1,
+      },
+    ],
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    interaction: { mode: 'index', intersect: false },
+    plugins: {
+      legend: { position: 'bottom' },
+      tooltip: {
+        callbacks: {
+          label: (ctx) => `${ctx.dataset.label}: $${ctx.parsed.y.toFixed(2)}M`,
+          afterBody: (ctxs) => {
+            if (ctxs.length === 2) {
+              const gap = (ctxs[1].parsed.y - ctxs[0].parsed.y).toFixed(2);
+              return [`General Fund subsidy: $${gap}M`];
+            }
+            return [];
+          },
+        },
+      },
+    },
+    scales: {
+      x: yearAxis,
+      y: dollarAxis,
+    },
+  },
+});
+
+// ====================================================================
+// CHART 4: THREE-CATEGORY GROWTH
+// ====================================================================
+new Chart(document.getElementById('chart-growth-rates'), {
+  type: 'line',
+  data: {
+    labels: DATA.growth.years,
+    datasets: [
+      {
+        label: 'Retiree benefits (MPSERS + OPEB)',
+        data: DATA.growth.retiree,
+        borderColor: COLORS.accent,
+        backgroundColor: COLORS.accent,
+        borderWidth: 3,
+        tension: 0.2,
+        pointRadius: 4,
+      },
+      {
+        label: 'Active health insurance (MESSA)',
+        data: DATA.growth.messa,
+        borderColor: COLORS.gold,
+        backgroundColor: COLORS.gold,
+        borderWidth: 3,
+        tension: 0.2,
+        pointRadius: 4,
+      },
+      {
+        label: 'Outsourced services (combined)',
+        data: DATA.growth.outsourced,
+        borderColor: COLORS.purple,
+        backgroundColor: COLORS.purple,
+        borderWidth: 3,
+        tension: 0.2,
+        pointRadius: 4,
+      },
+      {
+        label: 'Salaries (covered payroll)',
+        data: DATA.growth.salaries,
+        borderColor: COLORS.neutral,
+        backgroundColor: 'transparent',
+        borderWidth: 2,
+        borderDash: [4, 3],
+        tension: 0.2,
+        pointRadius: 3,
+        yAxisID: 'y1',
+      },
+    ],
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    interaction: { mode: 'index', intersect: false },
+    plugins: {
+      legend: { position: 'bottom' },
+      tooltip: dollarTooltip,
+    },
+    scales: {
+      x: yearAxis,
+      y: {
+        position: 'left',
+        title: { display: true, text: 'Benefits + outsourced ($M)', font: { size: 11 } },
+        ...dollarAxis,
+        beginAtZero: true,
+        suggestedMax: 60,
+      },
+      y1: {
+        position: 'right',
+        title: { display: true, text: 'Salaries ($M)', font: { size: 11 } },
+        ...dollarAxis,
+        beginAtZero: false,
+        suggestedMin: 60,
+        suggestedMax: 100,
+        grid: { drawOnChartArea: false },
+      },
+    },
+  },
+});
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# Temp
+*.tmp
+*.log
+
+# Files >5MB externalized to Cloudflare R2 (see *.r2.md sibling stubs and boarddocs/MANIFEST.md)
+/boarddocs/20210817_strategic_8-17-21_BOE_Strategic_Planning_Recommendations_2026_Autosaved.pptx
+/boarddocs/20210907_strategic_9-7-21_BOE_Strategic_Planning_Recommendations_2026_Autosaved__-__Read-Only.pptx
+/boarddocs/20210921_strategic_2026_TSD_BLUEPRINT_WORLD_CLASS_FOR_ALL_PPT_TEMPLATE_-_NEW_-_NO_ANIMATION.pptx
+/boarddocs/20211109_plante_moran_000_TSD_PEP_Study_Report_11092021_DRAFT.pdf
+/boarddocs/20211109_plante_moran_Troy_School_District_PEPS_Presentation_11-09-2021.pdf
+/boarddocs/20221004_audit_2.a._Troy_School_District_ACFR_Draft_2022.pdf
+/boarddocs/20221018_audit_8.B._24680_Troy_School_District_ACFR_0622_FS_Final.pdf
+/boarddocs/20230307_plante_moran_2.a._0_TSD_DRAFT_PEPS_02142023-1.pdf
+/boarddocs/20230307_plante_moran_2.a._TSD_PEPS_Presentation_02-27-2023_DRAFT.pptx
+/boarddocs/20231003_audit_Troy_School_District-0623-DRAFT_ACFR-1.pdf
+/boarddocs/20231017_audit_8.B._24680_Troy_School_District_ACFR_0623_FS_Final.pdf
+/boarddocs/20241112_achievement_Exploring_our_data_story_a_tale_of_achievement2.pptx
+/boarddocs/20241112_achievement_Exploring_our_data_story_a_tale_of_achievement_(002).pdf
+/boarddocs/20241112_audit_2.a._24680_Troy_School_District_ACFR_0624_FS_Final.pdf
+/boarddocs/20241119_achievement_BOE_Student_Achievement_Presentation_November_2024.pptx
+/boarddocs/20241119_achievement_Student_Achievement_Data_Review.pdf
+/boarddocs/20241119_audit_8.B._24680_Troy_School_District_ACFR_0624_FS_Final.pdf
+/boarddocs/20250114_attendance_AARC_BOE_Presentation_Final.pptx
+/boarddocs/20250506_attendance_AARC_BOE_Feedback.pptx
+/boarddocs/20251007_sped_update_SE_UpdatePresentation_100725.pptx
+/boarddocs/20251111_achievement_November_Board_Student_Assessment_Update_2025_.pdf
+/boarddocs/20251111_audit_24680_Troy_School_District-0625-AUD-Final.pdf
+/boarddocs/20251118_audit_8.B._24680_Troy_School_District-0625-AUD-Final.pdf

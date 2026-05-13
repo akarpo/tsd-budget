@@ -1,0 +1,1163 @@
+[
+  {
+    "meeting_date": "20230214",
+    "meeting_unique": "CNTMG85B242D",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "CNTMGL5B24F7",
+    "item_title": "Schools Closed to Open Enrollment",
+    "item_action": "Action (Consent)",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20230307",
+    "meeting_unique": "CPHSC971FF70",
+    "meeting_name": "Board of Education Workshop 6:00 PM",
+    "item_unique": "CPHSCG71FF77",
+    "item_title": "Pupil Enrollment Projections - Plante Moran CRESA",
+    "item_action": "Information",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20230311",
+    "meeting_unique": "CPHT6674FAFC",
+    "meeting_name": "Board of Education Winter Retreat 9:00 AM",
+    "item_unique": "CPHT6A74FB03",
+    "item_title": "Budget Priorities",
+    "item_action": "Discussion",
+    "has_attachment": false
+  },
+  {
+    "meeting_date": "20230404",
+    "meeting_unique": "CQ8N3B5796F8",
+    "meeting_name": "Board of Education Workshop 6:00 PM",
+    "item_unique": "CQ8N3J579702",
+    "item_title": "Budget Amendment - Ancillary Funds",
+    "item_action": "Information",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20230418",
+    "meeting_unique": "CQULFU55E40F",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "CQULGE55E4B2",
+    "item_title": "Ancillary Fund(s) Budget Amendment",
+    "item_action": "Action (Consent)",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20230502",
+    "meeting_unique": "CRBNB759DD75",
+    "meeting_name": "Board of Education Workshop 6:00 PM",
+    "item_unique": "CRBNBB59DD99",
+    "item_title": "Food Service Contract Renewal",
+    "item_action": "Information",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20230502",
+    "meeting_unique": "CRBNB759DD75",
+    "meeting_name": "Board of Education Workshop 6:00 PM",
+    "item_unique": "CRBNBD59DD9B",
+    "item_title": "SEC Contract",
+    "item_action": "Information",
+    "has_attachment": false
+  },
+  {
+    "meeting_date": "20230516",
+    "meeting_unique": "CRNJAM4C4280",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "CRNJAS4C42B0",
+    "item_title": "Troy School District Retirees",
+    "item_action": "",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20230516",
+    "meeting_unique": "CRNJAM4C4280",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "CRNJCT4C8D34",
+    "item_title": "ASBO Excellence in Financial Reporting for FY2022",
+    "item_action": "",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20230516",
+    "meeting_unique": "CRNJAM4C4280",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "CRNJB84C42BE",
+    "item_title": "Approve Oakland Intermediate School District Budget",
+    "item_action": "Action (Consent)",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20230516",
+    "meeting_unique": "CRNJAM4C4280",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "CRNJB94C42BF",
+    "item_title": "Resolution to Hold a Public Hearing on the Proposed 2023/2024 School Year Budget",
+    "item_action": "Action (Consent)",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20230516",
+    "meeting_unique": "CRNJAM4C4280",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "CRNJDP4CB60C",
+    "item_title": "Food Service Contract Renewal",
+    "item_action": "",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20230516",
+    "meeting_unique": "CRNJAM4C4280",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "CRNJDR4CB846",
+    "item_title": "IA Budget Approval for 2023/2024 School Year",
+    "item_action": "",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20230516",
+    "meeting_unique": "CRNJAM4C4280",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "CRUQMJ69B575",
+    "item_title": "CONSIDERATION: Administrative Appointment - Special Education Director",
+    "item_action": "Action",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20230516",
+    "meeting_unique": "CRNJAM4C4280",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "CRNJBU4C42D2",
+    "item_title": "CONSIDERATION: SEC Contract",
+    "item_action": "Action",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20230606",
+    "meeting_unique": "CSBQ2T64582D",
+    "meeting_name": "Board of Education Workshop 6:00 PM",
+    "item_unique": "CSBQ36645838",
+    "item_title": "2022-23 Final Budget Amendments - All Funds",
+    "item_action": "",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20230606",
+    "meeting_unique": "CSBQ2T64582D",
+    "meeting_name": "Board of Education Workshop 6:00 PM",
+    "item_unique": "CSBQ3864583A",
+    "item_title": "2023-24 Budget Adoption - All Funds",
+    "item_action": "",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20230613",
+    "meeting_unique": "CSJRSR6B3383",
+    "meeting_name": "Regular Meeting of the Board of Education 7:30 PM",
+    "item_unique": "CSJRVA6B8361",
+    "item_title": "PUBLIC HEARING: 2023/2024 Proposed Budget",
+    "item_action": "Information",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20230613",
+    "meeting_unique": "CSJRSR6B3383",
+    "meeting_name": "Regular Meeting of the Board of Education 7:30 PM",
+    "item_unique": "CSJRTE6B3398",
+    "item_title": "2022/2023 Budget Amendment",
+    "item_action": "Action (Consent)",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20230613",
+    "meeting_unique": "CSJRSR6B3383",
+    "meeting_name": "Regular Meeting of the Board of Education 7:30 PM",
+    "item_unique": "CSJRTF6B3399",
+    "item_title": "2023/2024 Budget Appropriations Resolution",
+    "item_action": "",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20230613",
+    "meeting_unique": "CSJRSR6B3383",
+    "meeting_name": "Regular Meeting of the Board of Education 7:30 PM",
+    "item_unique": "CSJRTM6B339F",
+    "item_title": "CONSIDERATION: Administrative Appointment - Special Education Supervisor",
+    "item_action": "Action",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20230718",
+    "meeting_unique": "CTMSBN6D701C",
+    "meeting_name": "Regular Meeting of the Board of Education 9:30 AM",
+    "item_unique": "CTMSEA6DED21",
+    "item_title": "CONSIDERATION: Extension of Administrative Contracts",
+    "item_action": "Action",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20230718",
+    "meeting_unique": "CTMSBN6D701C",
+    "meeting_name": "Regular Meeting of the Board of Education 9:30 AM",
+    "item_unique": "CTMSEC6DEF41",
+    "item_title": "CONSIDERATION: Extension of Assistant Superintendent Contracts",
+    "item_action": "Action",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20230718",
+    "meeting_unique": "CTMSBN6D701C",
+    "meeting_name": "Regular Meeting of the Board of Education 9:30 AM",
+    "item_unique": "CTMSEF6DF16B",
+    "item_title": "CONSIDERATION: Extension of Superintendent Contract",
+    "item_action": "Action",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20230815",
+    "meeting_unique": "CUKN295D4265",
+    "meeting_name": "Regular Meeting of the Board of Education 6:00 PM",
+    "item_unique": "CUKN2H5D426D",
+    "item_title": "Deputy Superintendent Contract Adjustment",
+    "item_action": "Action (Consent)",
+    "has_attachment": false
+  },
+  {
+    "meeting_date": "20230905",
+    "meeting_unique": "CV8PPM61B8DC",
+    "meeting_name": "Board of Education Workshop 6:00 PM",
+    "item_unique": "CV8PSG61E173",
+    "item_title": "Enrollment",
+    "item_action": "",
+    "has_attachment": false
+  },
+  {
+    "meeting_date": "20231003",
+    "meeting_unique": "CW5KVR532B68",
+    "meeting_name": "Board of Education Workshop 6:00 PM",
+    "item_unique": "CW5KVV532BAB",
+    "item_title": "Audit Report by Plante Moran",
+    "item_action": "",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20231017",
+    "meeting_unique": "CWGQKJ6624F4",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "CWGQWW6836FF",
+    "item_title": "REPORT: 2022/2023 Audit",
+    "item_action": "",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20231017",
+    "meeting_unique": "CWGQKJ6624F4",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "CWGQX56847F7",
+    "item_title": "CONSIDERATION: 2022/2023 Audit",
+    "item_action": "Action",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20231114",
+    "meeting_unique": "CXDQYR6BA05B",
+    "meeting_name": "Board of Education Workshop 7:00 P.M. (FOLLOWING SPECIAL MEETING)",
+    "item_unique": "CXDQZ26BA064",
+    "item_title": "Student Achievement Review",
+    "item_action": "Information",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20231114",
+    "meeting_unique": "CXDRAK6C0918",
+    "meeting_name": "Special Meeting of the Board of Education 6:00 PM",
+    "item_unique": "CXDRC96C26F4",
+    "item_title": "FIRST READING: Revisions of Board Policies Policy 2000.01 Admission and Enrollment: Resident Students Policy 2000.07 Health and Safety: Epinephrine Auto-Injectors (Epi-Pens) and Opioid Antagonists, Physical Examinations and Screenings Policy 3000.03 Instruction: Homebound Instruction Policy 4000.02 Employment Considerations: Discrimination and Harassment Policy 4000.04 Evaluations, Discipline and Discharge, Resignations Performance Evaluation Policy 4000.05 Other Matters of Employment Mandatory Reporting Policy 5000.03 Purchasing State/Federal Grants and Awards Policy 5000.07 Risk Management Policy 5000.12 Use of Electronic Signatures Policy 6000.02 Safety and Security Policy 7000.12 School Visitors Policy 7000.13 Engagement and Outside Organizations Policy 8000.03 Americans with Disabilities Act (ADA) / Section 504 of the Rehabilitation Act of 1973 (Section 504) Policy 8000.07 Discrimination and Harassment Policy 8000.09 Digital Communications Student and Staff",
+    "item_action": "Procedural",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20231205",
+    "meeting_unique": "CY2QAS6790B7",
+    "meeting_name": "Board of Education Workshop 7:00 P.M. (FOLLOWING SPECIAL MEETING)",
+    "item_unique": "CY2R596A6A2C",
+    "item_title": "General Fund Budget Amendment #1",
+    "item_action": "",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20231212",
+    "meeting_unique": "CYAJ2S4AEC43",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "CYAJ3G4AEC5B",
+    "item_title": "General Fund Budget Amendment #1.",
+    "item_action": "Action (Consent)",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20240109",
+    "meeting_unique": "CZ7JAX4C4E91",
+    "meeting_name": "Board of Education Workshop 6:00 P.M.",
+    "item_unique": "CZ7KLC511124",
+    "item_title": "Board Prioritization: Audit Process",
+    "item_action": "",
+    "has_attachment": false
+  },
+  {
+    "meeting_date": "20240227",
+    "meeting_unique": "D2EQDD68C97D",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "D2EQDX68CAAB",
+    "item_title": "Schools Closed to Open Enrollment",
+    "item_action": "Action (Consent)",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20240305",
+    "meeting_unique": "D2VQH968A71C",
+    "meeting_name": "Board of Education Workshop 6:00 P.M.",
+    "item_unique": "D2VQHH68A726",
+    "item_title": "Enrollment Projections \u2013 Plante Moran",
+    "item_action": "Discussion",
+    "has_attachment": false
+  },
+  {
+    "meeting_date": "20240319",
+    "meeting_unique": "D35LBN553E71",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "D3ANAC5EF792",
+    "item_title": "Retention Pond Budget Modification",
+    "item_action": "",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20240402",
+    "meeting_unique": "D3WR5V6C4E63",
+    "meeting_name": "Board of Education Workshop 6:00 P.M.",
+    "item_unique": "D3WR5Z6C4E6B",
+    "item_title": "Special Revenue Fund Budgets (Food Service, Community Service, Troy Preschool Fund)",
+    "item_action": "Discussion",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20240416",
+    "meeting_unique": "D46LSN572032",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "D46LT8572044",
+    "item_title": "Ancillary Fund(s) Budget Amendment",
+    "item_action": "",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20240507",
+    "meeting_unique": "D4NL2L54567D",
+    "meeting_name": "Board of Education Workshop 6:00 P.M.",
+    "item_unique": "D4NL2R545685",
+    "item_title": "Food Services Contract",
+    "item_action": "Information",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20240507",
+    "meeting_unique": "D4NL2L54567D",
+    "meeting_name": "Board of Education Workshop 6:00 P.M.",
+    "item_unique": "D4NQDR66A427",
+    "item_title": "Review Math Implementation",
+    "item_action": "",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20240521",
+    "meeting_unique": "D4NKZE54493B",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "D4NKZK544940",
+    "item_title": "Troy School District Retirees",
+    "item_action": "Recognition",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20240521",
+    "meeting_unique": "D4NKZE54493B",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "D4NKZV54494A",
+    "item_title": "Approve Oakland Intermediate School District Budget",
+    "item_action": "Action (Consent)",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20240521",
+    "meeting_unique": "D4NKZE54493B",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "D4NL2254494F",
+    "item_title": "Resolution to Hold a Public Hearing on the Proposed 2024/2025 School Year Budget",
+    "item_action": "",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20240521",
+    "meeting_unique": "D4NKZE54493B",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "D4NKZW54494B",
+    "item_title": "Food Service Contract",
+    "item_action": "Action (Consent)",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20240521",
+    "meeting_unique": "D4NKZE54493B",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "D59KE8515A4A",
+    "item_title": "IA Budget Approval for 2024/2025 School Year",
+    "item_action": "Action (Consent)",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20240606",
+    "meeting_unique": "D5RJ5H4B7E30",
+    "meeting_name": "Board of Education Workshop 6:00 P.M.",
+    "item_unique": "D5RJ5P4B7E36",
+    "item_title": "2023-24 Final Budget Amendments \u2013 All Funds",
+    "item_action": "Discussion",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20240606",
+    "meeting_unique": "D5RJ5H4B7E30",
+    "meeting_name": "Board of Education Workshop 6:00 P.M.",
+    "item_unique": "D5RJ5Q4B7E37",
+    "item_title": "2024-25 Budget Adoption \u2013 All Funds",
+    "item_action": "Discussion",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20240620",
+    "meeting_unique": "D68LKV56FC14",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "D68LKY56FC17",
+    "item_title": "PUBLIC HEARING: 2024/2025 Proposed Budget",
+    "item_action": "Information",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20240620",
+    "meeting_unique": "D68LKV56FC14",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "D68LME5730A0",
+    "item_title": "ASBO Excellence in Financial Reporting for FY2023",
+    "item_action": "Recognition",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20240620",
+    "meeting_unique": "D68LKV56FC14",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "D68LLF56FC2C",
+    "item_title": "2023/2024 Budget Amendment",
+    "item_action": "Action (Consent)",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20240620",
+    "meeting_unique": "D68LKV56FC14",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "D6DQZA6BB4D1",
+    "item_title": "2024/2025 Budget Appropriations Resolution",
+    "item_action": "",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20240620",
+    "meeting_unique": "D68LKV56FC14",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "D68LLM56FC32",
+    "item_title": "CONSIDERATION: Administrative Appointment - Special Education Supervisor",
+    "item_action": "Action",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20240620",
+    "meeting_unique": "D68LKV56FC14",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "D6ENQQ6103F7",
+    "item_title": "CONSIDERATION: TEA Contract Ratification",
+    "item_action": "Action",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20240716",
+    "meeting_unique": "D6YNG25F8F2A",
+    "meeting_name": "Regular Meeting of the Board of Education 9:30 AM",
+    "item_unique": "D73HVM4A5B8F",
+    "item_title": "CONSIDERATION: TESA Contract Ratification",
+    "item_action": "Action",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20240716",
+    "meeting_unique": "D6YNG25F8F2A",
+    "meeting_name": "Regular Meeting of the Board of Education 9:30 AM",
+    "item_unique": "D73HW64A6FBA",
+    "item_title": "CONSIDERATION: TESPA Contract Ratification",
+    "item_action": "Action",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20240820",
+    "meeting_unique": "D77JF94CEFDB",
+    "meeting_name": "Regular Meeting of the Board of Education 6:00 PM",
+    "item_unique": "D77JG94D0512",
+    "item_title": "CONSIDERATION: Extension of Administrative Contracts",
+    "item_action": "Action",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20240820",
+    "meeting_unique": "D77JF94CEFDB",
+    "meeting_name": "Regular Meeting of the Board of Education 6:00 PM",
+    "item_unique": "D77JGH4D0B9B",
+    "item_title": "CONSIDERATION: Extension of Assistant Superintendent Contracts",
+    "item_action": "Action",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20240820",
+    "meeting_unique": "D77JF94CEFDB",
+    "meeting_name": "Regular Meeting of the Board of Education 6:00 PM",
+    "item_unique": "D77JGR4D1249",
+    "item_title": "CONSIDERATION: Extension of Superintendent Contract",
+    "item_action": "Action",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20240903",
+    "meeting_unique": "D8MLUV584EBB",
+    "meeting_name": "Board of Education Workshop 6:00 PM",
+    "item_unique": "D8MLUZ584EC1",
+    "item_title": "Staffing &amp; Enrollment Update",
+    "item_action": "Information",
+    "has_attachment": false
+  },
+  {
+    "meeting_date": "20241015",
+    "meeting_unique": "D96RN96EC3DC",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "D9ULA75544F0",
+    "item_title": "Oakland County Special Education Parent Advisory Committee Representatives",
+    "item_action": "Action (Consent)",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20241112",
+    "meeting_unique": "DAQK9F50C69C",
+    "meeting_name": "Board of Education Workshop 6:00 PM",
+    "item_unique": "DAQK9K50C6A0",
+    "item_title": "2023-2024 Audit Report by Plante Moran",
+    "item_action": "Information",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20241112",
+    "meeting_unique": "DAQK9F50C69C",
+    "meeting_name": "Board of Education Workshop 6:00 PM",
+    "item_unique": "DAQK9M50C6A2",
+    "item_title": "Student Achievement Data Review",
+    "item_action": "Information",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20241119",
+    "meeting_unique": "DAQQBB687CE3",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "DAZQMR69F74E",
+    "item_title": "REPORT: Student Achievement Data Review",
+    "item_action": "Reports",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20241119",
+    "meeting_unique": "DAQQBB687CE3",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "DAQQC7687D00",
+    "item_title": "REPORT: 2023/2024 Audit Report",
+    "item_action": "Action",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20241119",
+    "meeting_unique": "DAQQBB687CE3",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "DAQQQQ6A7162",
+    "item_title": "CONSIDERATION: \t2023/2024 Audit",
+    "item_action": "Action",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20241203",
+    "meeting_unique": "DBDPK364EF28",
+    "meeting_name": "Board of Education Workshop 6:00 PM",
+    "item_unique": "DBDPK764EF2C",
+    "item_title": "Budget Amendment #1",
+    "item_action": "Information",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20241203",
+    "meeting_unique": "DBDPK364EF28",
+    "meeting_name": "Board of Education Workshop 6:00 PM",
+    "item_unique": "DBDPK964EF2E",
+    "item_title": "Accountability Review",
+    "item_action": "Information",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20241217",
+    "meeting_unique": "DBTMEY5AF5B3",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "DBTMFF5AF5C2",
+    "item_title": "Budget Amendment #1",
+    "item_action": "Action (Consent)",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20250114",
+    "meeting_unique": "DCRLWR58904A",
+    "meeting_name": "Board of Education Workshop 6:00 PM",
+    "item_unique": "DCRLWZ589054",
+    "item_title": "Attendance Area Review Committee Update",
+    "item_action": "Information",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20250225",
+    "meeting_unique": "DDSUUF7DBF46",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "DDSUUZ7DBF58",
+    "item_title": "Schools Closed to Open Enrollment",
+    "item_action": "Action (Consent)",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20250304",
+    "meeting_unique": "DE8SWM74AFF0",
+    "meeting_name": "Board of Education Workshop 6:00 PM",
+    "item_unique": "DEBLDH560DDA",
+    "item_title": "Bus Time Study Update",
+    "item_action": "",
+    "has_attachment": false
+  },
+  {
+    "meeting_date": "20250308",
+    "meeting_unique": "DE8SXA74C8F9",
+    "meeting_name": "Board of Education Winter Retreat 8:30 AM",
+    "item_unique": "DE8SXE74C8FF",
+    "item_title": "Budget",
+    "item_action": "Information",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20250308",
+    "meeting_unique": "DE8SXA74C8F9",
+    "meeting_name": "Board of Education Winter Retreat 8:30 AM",
+    "item_unique": "DE8SYF74F4FB",
+    "item_title": "Proposed 25/26 Expenditures and Revenues",
+    "item_action": "",
+    "has_attachment": false
+  },
+  {
+    "meeting_date": "20250308",
+    "meeting_unique": "DE8SXA74C8F9",
+    "meeting_name": "Board of Education Winter Retreat 8:30 AM",
+    "item_unique": "DE8SYG74F616",
+    "item_title": "Budget Building Overview",
+    "item_action": "",
+    "has_attachment": false
+  },
+  {
+    "meeting_date": "20250318",
+    "meeting_unique": "DEQPJ46473D7",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "DEQPJL6473EA",
+    "item_title": "Budget Amendment #2",
+    "item_action": "Action (Consent)",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20250401",
+    "meeting_unique": "DF7TFZ773C76",
+    "meeting_name": "Board of Education Workshop 6:00 PM",
+    "item_unique": "DF7TG5773C7A",
+    "item_title": "Enrollment Projections \u2013 Plante Moran",
+    "item_action": "Information",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20250401",
+    "meeting_unique": "DF7TFZ773C76",
+    "meeting_name": "Board of Education Workshop 6:00 PM",
+    "item_unique": "DF7TG7773C7C",
+    "item_title": "Transportation Report",
+    "item_action": "Discussion",
+    "has_attachment": false
+  },
+  {
+    "meeting_date": "20250401",
+    "meeting_unique": "DF7TFZ773C76",
+    "meeting_name": "Board of Education Workshop 6:00 PM",
+    "item_unique": "DF7TG9773C7E",
+    "item_title": "Attendance Area Review Update",
+    "item_action": "Information",
+    "has_attachment": false
+  },
+  {
+    "meeting_date": "20250506",
+    "meeting_unique": "DG7NRV613F09",
+    "meeting_name": "Board of Education Workshop 6:00 PM",
+    "item_unique": "DG7NRZ613F0F",
+    "item_title": "Transportation Parking Lot Lighting",
+    "item_action": "Information",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20250506",
+    "meeting_unique": "DG7NRV613F09",
+    "meeting_name": "Board of Education Workshop 6:00 PM",
+    "item_unique": "DG7PE5643677",
+    "item_title": "Review Math Data",
+    "item_action": "",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20250506",
+    "meeting_unique": "DG7NRV613F09",
+    "meeting_name": "Board of Education Workshop 6:00 PM",
+    "item_unique": "DG7PEM644791",
+    "item_title": "Attendance Area Review Update/Survey Results",
+    "item_action": "",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20250520",
+    "meeting_unique": "DG7PJD64BFBB",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "DG7PJJ64BFC0",
+    "item_title": "Troy School District Retirees",
+    "item_action": "Recognition",
+    "has_attachment": false
+  },
+  {
+    "meeting_date": "20250520",
+    "meeting_unique": "DG7PJD64BFBB",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "DG7PJY64BFCE",
+    "item_title": "Approve Oakland Intermediate School District Budget",
+    "item_action": "Action (Consent)",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20250520",
+    "meeting_unique": "DG7PJD64BFBB",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "DG7PJZ64BFCF",
+    "item_title": "Resolution to Hold a Public Hearing on the Proposed 2024/2025 School Year Budget",
+    "item_action": "Action (Consent)",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20250520",
+    "meeting_unique": "DG7PJD64BFBB",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "DG7PK364BFD1",
+    "item_title": "IA Budget Approval for 2025/2026 School Year",
+    "item_action": "Action (Consent)",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20250520",
+    "meeting_unique": "DG7PJD64BFBB",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "DGMKNV52BC5A",
+    "item_title": "Transportation Parking Lot Lighting",
+    "item_action": "",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20250520",
+    "meeting_unique": "DG7PJD64BFBB",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "DG7PKE64BFDC",
+    "item_title": "CONSIDERATION: \t Administrative Appointment \u2013 Special Education Supervisor",
+    "item_action": "Action",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20250603",
+    "meeting_unique": "DH3Q7G6770D4",
+    "meeting_name": "Board of Education Workshop 6:00 P.M.",
+    "item_unique": "DH3Q8E679F2A",
+    "item_title": "Food Service Contract Renewal",
+    "item_action": "Information",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20250603",
+    "meeting_unique": "DH3Q7G6770D4",
+    "meeting_name": "Board of Education Workshop 6:00 P.M.",
+    "item_unique": "DH6MTW5CDA56",
+    "item_title": "First Student Contract Extension",
+    "item_action": "",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20250603",
+    "meeting_unique": "DH3Q7G6770D4",
+    "meeting_name": "Board of Education Workshop 6:00 P.M.",
+    "item_unique": "DH3Q7N6770DB",
+    "item_title": "2024-25 Final Budget Amendments \u2013 All Funds",
+    "item_action": "Discussion",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20250603",
+    "meeting_unique": "DH3Q7G6770D4",
+    "meeting_name": "Board of Education Workshop 6:00 P.M.",
+    "item_unique": "DH3Q7Q6770DD",
+    "item_title": "2025-26 Budget Adoption \u2013 All Funds",
+    "item_action": "Discussion",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20250617",
+    "meeting_unique": "DH4M3E59442C",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "DH4M3H59442F",
+    "item_title": "PUBLIC HEARING: 2025/2026 Proposed Budget",
+    "item_action": "Information",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20250617",
+    "meeting_unique": "DH4M3E59442C",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "DH4M8M5A07A0",
+    "item_title": "Food Service Contract Renewal",
+    "item_action": "Action (Consent)",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20250617",
+    "meeting_unique": "DH4M3E59442C",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "DH4M43594441",
+    "item_title": "2024/2025 Budget Amendment",
+    "item_action": "Action (Consent)",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20250617",
+    "meeting_unique": "DH4M3E59442C",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "DH4M44594442",
+    "item_title": "2025/2026 Budget Appropriations Resolution",
+    "item_action": "Action (Consent)",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20250617",
+    "meeting_unique": "DH4M3E59442C",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "DHKJPG4E243D",
+    "item_title": "First Student Contract Renewal",
+    "item_action": "Action (Consent)",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20250715",
+    "meeting_unique": "DJER2D6BDDE8",
+    "meeting_name": "Regular Meeting of the Board of Education 9:30 AM",
+    "item_unique": "DJER2Q6BDDF3",
+    "item_title": "Settlement Terms of Batista v Office of Retirement Services Litigation",
+    "item_action": "Action (Consent)",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20250715",
+    "meeting_unique": "DJER2D6BDDE8",
+    "meeting_name": "Regular Meeting of the Board of Education 9:30 AM",
+    "item_unique": "DJER2W6BDDF9",
+    "item_title": "CONSIDERATION: Extension of Administrative Contracts",
+    "item_action": "Action",
+    "has_attachment": false
+  },
+  {
+    "meeting_date": "20250715",
+    "meeting_unique": "DJER2D6BDDE8",
+    "meeting_name": "Regular Meeting of the Board of Education 9:30 AM",
+    "item_unique": "DJER2Y6BDDFB",
+    "item_title": "CONSIDERATION: Extension of Assistant Superintendent Contracts",
+    "item_action": "Action",
+    "has_attachment": false
+  },
+  {
+    "meeting_date": "20250715",
+    "meeting_unique": "DJER2D6BDDE8",
+    "meeting_name": "Regular Meeting of the Board of Education 9:30 AM",
+    "item_unique": "DJFTXR798B0D",
+    "item_title": "CONSIDERATION: Extension of Superintendent Contract",
+    "item_action": "Action",
+    "has_attachment": false
+  },
+  {
+    "meeting_date": "20250819",
+    "meeting_unique": "DKJQLE69D189",
+    "meeting_name": "Regular Meeting of the Board of Education 6:00 PM",
+    "item_unique": "DKJQLU69D197",
+    "item_title": "CONSIDERATION: Administrative Appointment - Special Education Supervisor",
+    "item_action": "Action",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20251007",
+    "meeting_unique": "DM2JSY4EA7F1",
+    "meeting_name": "Board of Education Workshop 6:00 P.M.",
+    "item_unique": "DM4J7J4BCE59",
+    "item_title": "Policy Update Review",
+    "item_action": "",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20251007",
+    "meeting_unique": "DM2JSY4EA7F1",
+    "meeting_name": "Board of Education Workshop 6:00 P.M.",
+    "item_unique": "DM2JT94EA7FC",
+    "item_title": "Special Education Update",
+    "item_action": "",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20251007",
+    "meeting_unique": "DM2JSY4EA7F1",
+    "meeting_name": "Board of Education Workshop 6:00 P.M.",
+    "item_unique": "DM2JTB4EA7FE",
+    "item_title": "Book Study: The Disengaged Teen",
+    "item_action": "",
+    "has_attachment": false
+  },
+  {
+    "meeting_date": "20251111",
+    "meeting_unique": "DN6KUL539426",
+    "meeting_name": "Board of Education Workshop 6:00 P.M.",
+    "item_unique": "DN6KUQ539461",
+    "item_title": "Audit Presentation",
+    "item_action": "Discussion",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20251111",
+    "meeting_unique": "DN6KUL539426",
+    "meeting_name": "Board of Education Workshop 6:00 P.M.",
+    "item_unique": "DN6KUR539462",
+    "item_title": "Transportation Study Review",
+    "item_action": "Information",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20251111",
+    "meeting_unique": "DN6KUL539426",
+    "meeting_name": "Board of Education Workshop 6:00 P.M.",
+    "item_unique": "DN6KUW539467",
+    "item_title": "Student Achievement Data Review",
+    "item_action": "",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20251118",
+    "meeting_unique": "DN6KWP53E3C6",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "DNDS9D718F14",
+    "item_title": "REPORT: Student Achievement Data Review",
+    "item_action": "Reports",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20251118",
+    "meeting_unique": "DN6KWP53E3C6",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "DN6KYH5426C3",
+    "item_title": "REPORT: 2024/2025 Audit",
+    "item_action": "Reports",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20251118",
+    "meeting_unique": "DN6KWP53E3C6",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "DN6KX953E3D8",
+    "item_title": "CONSIDERATION: 2024/2025 Audit",
+    "item_action": "Action",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20260113",
+    "meeting_unique": "DN6L4B54B680",
+    "meeting_name": "Board of Education Workshop 6:00 P.M.",
+    "item_unique": "DQ4NML608B8C",
+    "item_title": "Middle School Math Enrollment/Subgroup Data Update",
+    "item_action": "",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20260113",
+    "meeting_unique": "DN6L4B54B680",
+    "meeting_name": "Board of Education Workshop 6:00 P.M.",
+    "item_unique": "DN6L4F54B684",
+    "item_title": "Budget Amendment #1",
+    "item_action": "Discussion",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20260113",
+    "meeting_unique": "DN6L4B54B680",
+    "meeting_name": "Board of Education Workshop 6:00 P.M.",
+    "item_unique": "DQ4NN360A637",
+    "item_title": "Fiscal Year 26/27 Budget Planning",
+    "item_action": "Discussion",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20260120",
+    "meeting_unique": "DQ4NP660D8C6",
+    "meeting_name": "Organizational and Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "DQCMR35C6F21",
+    "item_title": "Budget Amendment #1",
+    "item_action": "Action (Consent)",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20260120",
+    "meeting_unique": "DQ4NP660D8C6",
+    "meeting_name": "Organizational and Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "DQCR4P6C3440",
+    "item_title": "CONSIDERATION: EXTENSION OF TESA CONTRACT",
+    "item_action": "Action",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20260120",
+    "meeting_unique": "DQ4NP660D8C6",
+    "meeting_name": "Organizational and Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "DQCR4S6C3758",
+    "item_title": "CONSIDERATION: EXTENSION OF TESPA CONTRACT",
+    "item_action": "Action",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20260203",
+    "meeting_unique": "DQJK9C50A05E",
+    "meeting_name": "Board of Education Workshop 6:00 PM",
+    "item_unique": "DQJK9G50A063",
+    "item_title": "Curriculum Review Process Update",
+    "item_action": "Information",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20260303",
+    "meeting_unique": "DRLT5D74D946",
+    "meeting_name": "Board of Education Workshop 6:00 PM",
+    "item_unique": "DRPSNA737766",
+    "item_title": "Transportation Update",
+    "item_action": "",
+    "has_attachment": false
+  },
+  {
+    "meeting_date": "20260307",
+    "meeting_unique": "DRLTFB7722E5",
+    "meeting_name": "Winter Board of Education Retreat 8:30 AM",
+    "item_unique": "DRLTH677684B",
+    "item_title": "Enrollment Projections \u2013 Plante Moran",
+    "item_action": "",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20260307",
+    "meeting_unique": "DRLTFB7722E5",
+    "meeting_name": "Winter Board of Education Retreat 8:30 AM",
+    "item_unique": "DRLTFJ7722EC",
+    "item_title": "Proposed 26/27 Expenditures and Revenues",
+    "item_action": "Discussion",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20260307",
+    "meeting_unique": "DRLTFB7722E5",
+    "meeting_name": "Winter Board of Education Retreat 8:30 AM",
+    "item_unique": "DRLTFK7722ED",
+    "item_title": "Budget Targets",
+    "item_action": "",
+    "has_attachment": false
+  },
+  {
+    "meeting_date": "20260317",
+    "meeting_unique": "DRLTJU77A713",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "DRLTPR785F28",
+    "item_title": "Budget Amendment #2",
+    "item_action": "Action (Consent)",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20260317",
+    "meeting_unique": "DRLTJU77A713",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "DRLTPS786074",
+    "item_title": "Schools Closed to Open Enrollment",
+    "item_action": "",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20260317",
+    "meeting_unique": "DRLTJU77A713",
+    "meeting_name": "Regular Meeting of the Board of Education 7:00 PM",
+    "item_unique": "DRLTKG77A72A",
+    "item_title": "REPORT: Enrollment Projections",
+    "item_action": "Action",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20260407",
+    "meeting_unique": "DS9LBG55BDB5",
+    "meeting_name": "Board of Education Workshop 6:15 PM",
+    "item_unique": "DSHN455E0C6E",
+    "item_title": "Code of Conduct Update Review",
+    "item_action": "Information",
+    "has_attachment": true
+  },
+  {
+    "meeting_date": "20260407",
+    "meeting_unique": "DS9LBG55BDB5",
+    "meeting_name": "Board of Education Workshop 6:15 PM",
+    "item_unique": "DSHN4M5E21A9",
+    "item_title": "Strategic Planning Overview",
+    "item_action": "",
+    "has_attachment": false
+  },
+  {
+    "meeting_date": "20260428",
+    "meeting_unique": "DSWSCD7204AE",
+    "meeting_name": "Board of Education Workshop 6:00 PM",
+    "item_unique": "DTCST4742C17",
+    "item_title": "Strategic Plan Update",
+    "item_action": "",
+    "has_attachment": false
+  },
+  {
+    "meeting_date": "20260428",
+    "meeting_unique": "DTCSKW731F25",
+    "meeting_name": "Special Meeting of the Board of Education 5:30 PM",
+    "item_unique": "DTCSL9731FF5",
+    "item_title": "CONSIDERATION: TEA Contract Approval",
+    "item_action": "Action",
+    "has_attachment": true
+  }
+]
