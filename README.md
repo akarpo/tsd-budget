@@ -38,19 +38,13 @@ The file `~/Downloads/Troy_ACFR_FY2025.pdf` (not in this folder) is the **City o
 
 The BoardDocs Public API (Lotus Domino + CloudFront WAF) is undocumented but stable. The `scripts/` directory contains everything needed to re-run the harvest. See [`scripts/README.md`](./scripts/README.md) for the recipe.
 
-## Deploying to Cloudflare Pages
+## Deploying to Cloudflare
 
-Cloudflare Pages defaults to treating the repo root as the asset directory, which includes `.git/objects/pack/*.pack` (currently ~85 MiB — over Cloudflare's 25 MiB per-asset limit). To work around this, the repo includes a `build.sh` that produces a clean `dist/` containing only tracked files via `git archive`.
+This project is wired to Cloudflare as a **Workers Static Assets** project (auto-detected from the GitHub connection — the dashboard shows `Framework: Static`, `Output Directory: .`, `Executing user deploy command: npx wrangler deploy`). Push to `main` triggers a deploy.
 
-**Configure in the Cloudflare Pages dashboard:**
+The repo-root deploy mode would otherwise include `.git/objects/pack/*.pack` (~88 MiB — over Cloudflare's 25 MiB per-asset limit). The fix lives in [`.assetsignore`](./.assetsignore), which excludes `.git/`, build artifacts, and editor/OS cruft from the deployed asset set. No dashboard settings need to change.
 
-| Setting | Value |
-|---|---|
-| Build command | `bash build.sh` |
-| Build output directory | `dist` |
-| Root directory | (leave default / blank) |
-
-The script is also runnable locally for preview: `bash build.sh && open dist/index.html`.
+For local preview, [`build.sh`](./build.sh) writes a clean `dist/` mirror via `git archive`: `bash build.sh && open dist/index.html`.
 
 ## License
 

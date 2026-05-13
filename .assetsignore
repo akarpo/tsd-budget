@@ -1,0 +1,38 @@
+# Cloudflare Workers Static Assets — exclude list
+# See: https://developers.cloudflare.com/workers/static-assets/binding/#ignore-files
+#
+# Wrangler treats the repo root as the assets directory, which would
+# otherwise include .git/ (the packfile is ~88 MiB, exceeds Workers'
+# 25 MiB per-asset limit). This file excludes infrastructure paths
+# while keeping all deployable content (index.html, inputs/, boarddocs/,
+# scripts/, ANALYSIS.md, README.md, etc.).
+
+# Git internals
+.git
+.git/**
+.gitignore
+.gitattributes
+
+# Build artifacts (local-preview only — not for deploy)
+dist
+dist/**
+build.sh
+wrangler.jsonc
+wrangler.toml
+
+# Editor / OS
+.DS_Store
+.vscode
+.idea
+*.swp
+*~
+
+# Python
+__pycache__
+__pycache__/**
+*.pyc
+*.pyo
+.venv
+.venv/**
+venv
+venv/**
