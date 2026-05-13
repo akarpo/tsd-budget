@@ -9,9 +9,9 @@ This file is hosted on Cloudflare R2 (too large for the git repo).
 | Size | 30.29 MB (31,756,953 bytes) |
 | SHA-256 | `573ebe890620debabf06df79546b90921e24dc82ec28e78989ab1b36dbc64a37` |
 | Source | Troy School District BoardDocs harvest (May 2026) |
-| R2 URL | https://<R2-CUSTOM-DOMAIN-OR-PUB-HASH.r2.dev>/boarddocs/20230307_plante_moran_2.a._0_TSD_DRAFT_PEPS_02142023-1.pdf |
+| R2 URL | https://media.karpowitsch.org/tsd-budget/boarddocs/20230307_plante_moran_2.a._0_TSD_DRAFT_PEPS_02142023-1.pdf |
 
-**Status:** `pending R2 upload` — URL will be updated once the file is uploaded.
+**Status:** uploaded to R2.
 
 To verify integrity after download:
 ```bash

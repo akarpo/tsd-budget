@@ -9,9 +9,9 @@ This file is hosted on Cloudflare R2 (too large for the git repo).
 | Size | 29.73 MB (31,176,331 bytes) |
 | SHA-256 | `9f9e56371e29613af47db1b0f6fa86cd52af78042e066233f6cd0a23c470a09b` |
 | Source | Troy School District BoardDocs harvest (May 2026) |
-| R2 URL | https://<R2-CUSTOM-DOMAIN-OR-PUB-HASH.r2.dev>/boarddocs/20250506_attendance_AARC_BOE_Feedback.pptx |
+| R2 URL | https://media.karpowitsch.org/tsd-budget/boarddocs/20250506_attendance_AARC_BOE_Feedback.pptx |
 
-**Status:** `pending R2 upload` — URL will be updated once the file is uploaded.
+**Status:** uploaded to R2.
 
 To verify integrity after download:
 ```bash
