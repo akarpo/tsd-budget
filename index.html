@@ -444,6 +444,7 @@
     <nav class="nav-meta">
       <a href="#deficit-math">The math</a>
       <a href="#sped">Special ed</a>
+      <a href="#hca-timeline">HCA timeline</a>
       <a href="#esser">ESSER cliff</a>
       <a href="#synthesis">Synthesis</a>
       <a href="https://github.com/akarpo/tsd-budget">Source</a>
@@ -573,7 +574,7 @@
 
 <div class="section-divider">·  ·  ·</div>
 
-<!-- Year-range filter — affects time-series charts in Sections 2-6 and 8 -->
+<!-- Year-range filter — affects time-series charts in Sections 2, 3, 4, 5, 6, 7, and 9 -->
 <div class="container">
   <div class="filter-bar" role="region" aria-label="Year range filter for time-series charts">
     <span class="filter-label">Filter time-series charts:</span>
@@ -581,7 +582,7 @@
     <span class="filter-sep">to</span>
     <select id="filter-to" class="filter-select" aria-label="To fiscal year"></select>
     <button id="filter-reset" class="filter-reset" type="button">Reset</button>
-    <span class="filter-note">Applies to charts in Sections 2, 3, 4, 5, 6, and 8</span>
+    <span class="filter-note">Applies to charts in Sections 2, 3, 4, 5, 6, 7, and 9</span>
   </div>
 </div>
 
@@ -700,11 +701,109 @@
 
 <div class="section-divider">·  ·  ·</div>
 
-<!-- PART 4: THREE-CATEGORY GROWTH RATES -->
+<!-- PART 4: HCA / EDUSTAFF / LEVENSON TIMELINE -->
+<section id="hca-timeline">
+<div class="container">
+  <div class="prose">
+    <h2>4. The HCA buildup: a Special Ed staffing layer that kept growing after Levenson recommended otherwise</h2>
+    <p>
+      Section 3 introduced the General Fund subsidy to Special Education. The single largest <em>new</em> line within that program is the contracted Health Care Aide (HCA) layer — third-party staff supplied through Edustaff, billed against object code 3116 in TSD's accounting system. From FY22 to FY26, this single line grew from effectively zero to <strong>$2.74M per year</strong>.<sup class="cite"><a href="#s4-src-1">1</a></sup>
+    </p>
+  </div>
+
+  <!-- Chart 4: HCA timeline -->
+  <div class="chart-block">
+    <div class="chart-title">Special-Ed-coded Edustaff spending, FY22-FY26 (year-to-date)</div>
+    <div class="chart-subtitle">Bars stack two components: contracted Health Care Aides (HCAs — object code 3116) and substitute / instructional services (codes 3110-3115). The Levenson / New Solutions K12 review was delivered to the district in <strong>December 2023</strong> — between the FY23 and FY24 bars. It recommended a reduction in paraprofessional staffing through natural attrition.</div>
+    <div class="chart-wrap">
+      <div class="chart-canvas-wrap"><canvas id="chart-hca-timeline"></canvas></div>
+      <div class="chart-source">
+        Source: <em>Special Ed Edustaff Historical Costs.xlsx</em> (658 GL-level rows; sheet Sheet1, columns Year/Budget Unit/Account/Title/YTD Expenses). Provided by Dan Trudel, CPA, Assistant Superintendent of Business Services. Aggregated by fiscal year on object code 3116 (HCA) vs. 3110-3115 (subs/instruction).
+        <a href="inputs/Special Ed Edustaff Historical Costs.xlsx">Source xlsx</a>.
+      </div>
+    </div>
+  </div>
+
+  <div class="stat-grid">
+    <div class="stat">
+      <div class="stat-number">$1,586<sup class="cite"><a href="#s4-src-1">1</a></sup></div>
+      <div class="stat-label">Total HCA spending in FY22 — the program was effectively non-existent</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">$2.57M<sup class="cite"><a href="#s4-src-1">1</a></sup></div>
+      <div class="stat-label">HCA spending in FY24, the year Levenson recommended reduction</div>
+    </div>
+    <div class="stat">
+      <div class="stat-number">$2.74M<sup class="cite"><a href="#s4-src-1">1</a></sup></div>
+      <div class="stat-label">HCA spending in FY25 — slightly higher again the year after</div>
+    </div>
+  </div>
+
+  <div class="prose">
+    <h3>The chronology</h3>
+    <p>
+      <strong>FY22 (July 2021 - June 2022).</strong> The HCA program was effectively non-existent — total Edustaff HCA charges of <strong>$1,586</strong> for the year.<sup class="cite"><a href="#s4-src-1">1</a></sup>
+    </p>
+    <p>
+      <strong>FY23 (July 2022 - June 2023).</strong> HCA spending jumped to <strong>$1.33M</strong> as the contracted-aide model was implemented at scale, distributed across approximately a dozen distinct GL lines (ASD, AI, EI, ESY, MICI, MOCI, etc.).<sup class="cite"><a href="#s4-src-1">1</a></sup>
+    </p>
+    <p>
+      <strong>December 2023 (mid-FY24).</strong> Nathan Levenson's firm, New Solutions K12, delivered the report <em>"Improving Outcomes and Equity for Students with Disabilities and Other Students who Struggle"</em> — a 32-page review based on 130+ stakeholder interviews and commissioned by the district itself. Page 11 explicitly recommended that the paraprofessional layer should shrink over time: <em>"fewer paraprofessionals or student support aides will be needed,"</em> achieved through natural attrition rather than layoffs.<sup class="cite"><a href="#s4-src-2">2</a></sup>
+    </p>
+    <p>
+      <strong>FY24 (the year Levenson delivered).</strong> HCA spending grew to <strong>$2.57M</strong> — up another $1.24M over FY23, in the same year the recommendation was received.<sup class="cite"><a href="#s4-src-1">1</a></sup>
+    </p>
+    <p>
+      <strong>FY25 (July 2024 - June 2025).</strong> HCA spending reached <strong>$2.74M</strong>, a further $170K increase.<sup class="cite"><a href="#s4-src-1">1</a></sup>
+    </p>
+    <p>
+      <strong>FY26 (in progress).</strong> Year-to-date HCA spending of <strong>$1.94M</strong> as of the source file's generation (approximately mid-FY26). The full-year figure will not be available until the FY26 ACFR.<sup class="cite"><a href="#s4-src-1">1</a></sup>
+    </p>
+
+    <h3>Reading the data fairly</h3>
+    <p>Two important caveats:</p>
+    <ol>
+      <li>
+        This chart shows only the <em>SpEd-coded</em> portion of Edustaff invoices. Full Edustaff disbursements (all purposes — substitute teachers, general staffing, etc.) totaled approximately <strong>$5.0M in FY25</strong> per the check register; about <strong>$3.0M of that was SpEd-coded</strong>.<sup class="cite"><a href="#s4-src-3">3</a></sup> The remaining ~$2M was non-SpEd staffing.
+      </li>
+      <li>
+        Levenson recommended reduction <em>via attrition</em>. An emergency draw-down is harder: IEPs commit the district to specific staffing levels for specific students. The defensible read is that district leadership did not view the attrition path as compatible with then-current student needs. That can be a legitimate professional judgment — but it should be a discussed and documented one. <strong>No board presentation or written response to the Levenson HCA recommendation has been located in BoardDocs.</strong>
+      </li>
+    </ol>
+
+    <p>
+      Normalized against IEP enrollment (the FY25 figure of <strong>1,367 students with IEPs</strong> from Section 3), the HCA layer alone runs about <strong>$2,000 per IEP student per year</strong>.<sup class="cite"><a href="#s4-src-1">1</a></sup> That is on top of the in-house aide layer, the teacher cost, and the other SpEd program costs that together produce the $9M general-fund subsidy described in Section 3.
+    </p>
+  </div>
+
+  <details class="section-sources">
+    <summary>Sources for this section</summary>
+    <ol>
+      <li id="s4-src-1">
+        <strong>Special Ed Edustaff Historical Costs xlsx</strong> (658 GL-level rows; sheet Sheet1, columns Year / Budget Unit / Account / Title / YTD Expenses). Provided by Dan Trudel, CPA, Assistant Superintendent of Business Services. Aggregated by fiscal year and object code: 3116 = HCA, 3110-3115 = substitute / instructional services. Year-by-year HCA totals: FY22 $1,586; FY23 $1,332,127; FY24 $2,572,242; FY25 $2,741,165; FY26 YTD $1,944,810. Non-HCA SpEd Edustaff totals: FY22 $0.26M; FY23 $0.21M; FY24 $0.41M; FY25 $0.24M; FY26 YTD $0.16M. The FY26 figure is partial — the xlsx was generated approximately mid-FY26.
+        <a href="inputs/Special Ed Edustaff Historical Costs.xlsx">Source xlsx</a>.
+      </li>
+      <li id="s4-src-2">
+        <strong>"Improving Outcomes and Equity for Students with Disabilities and Other Students who Struggle"</strong> — Troy School District. New Solutions K12 (Nathan Levenson, principal), December 2023. 32-page review based on 130+ stakeholder interviews. Page 11 ("Right-Sizing the Para Layer") explicitly recommends reducing paraprofessionals through natural attrition: <em>"fewer paraprofessionals or student support aides will be needed."</em>
+        <a href="boarddocs/2023-12-08_Levenson_NSK12_Findings_Report.pdf">Read the full report</a>.
+      </li>
+      <li id="s4-src-3">
+        <strong>TSD check register reconciliation, FY11-FY26</strong>. Total Edustaff disbursements (all purposes — substitute teachers, general staffing, contracted SpEd aides) in FY25 ≈ $5.0M. SpEd-coded slice (Sections 4 chart) ≈ $3.0M. Remaining ~$2M is general staffing / substitute teachers, distinct from the HCA buildup story.
+        <a href="https://github.com/akarpo/tsd-checkregister">tsd-checkregister repo</a>.
+      </li>
+    </ol>
+  </details>
+
+</div>
+</section>
+
+<div class="section-divider">·  ·  ·</div>
+
+<!-- PART 5: THREE-CATEGORY GROWTH RATES -->
 <section id="growth-rates">
 <div class="container">
   <div class="prose">
-    <h2>4. The cost-growth ranking</h2>
+    <h2>5. The cost-growth ranking</h2>
     <p>
       One way to understand the deficit is to ask which categories of district spending have grown faster than others. Over the six years from FY18 (the proper pre-Covid baseline) to FY24 (the most recent audited year), three categories stand out:
     </p>
@@ -725,34 +824,34 @@
 
   <div class="prose">
     <p>
-      <strong>Retiree benefits</strong> (MPSERS pension + OPEB retiree healthcare) added the most absolute dollars: <strong>$16.2 million per year</strong> between FY18 and FY24.<sup class="cite"><a href="#s4-src-1">1</a></sup> MPSERS alone grew from <strong>30.3% of payroll to 41.4%</strong> over that period, peaking at <strong>48.6% in FY23</strong>.<sup class="cite"><a href="#s4-src-1">1</a></sup> Most of that is now state pass-through under Section 147c, but it inflates the expense base regardless.
+      <strong>Retiree benefits</strong> (MPSERS pension + OPEB retiree healthcare) added the most absolute dollars: <strong>$16.2 million per year</strong> between FY18 and FY24.<sup class="cite"><a href="#s5-src-1">1</a></sup> MPSERS alone grew from <strong>30.3% of payroll to 41.4%</strong> over that period, peaking at <strong>48.6% in FY23</strong>.<sup class="cite"><a href="#s5-src-1">1</a></sup> Most of that is now state pass-through under Section 147c, but it inflates the expense base regardless.
     </p>
     <p>
-      <strong>Active employee health insurance</strong> (MESSA) added <strong>$5.8M</strong>, growing at <strong>7.3% per year compounded</strong> — pure healthcare inflation on a major cost line.<sup class="cite"><a href="#s4-src-2">2</a></sup>
+      <strong>Active employee health insurance</strong> (MESSA) added <strong>$5.8M</strong>, growing at <strong>7.3% per year compounded</strong> — pure healthcare inflation on a major cost line.<sup class="cite"><a href="#s5-src-2">2</a></sup>
     </p>
     <p>
-      <strong>Outsourced services</strong> (the combination of Edustaff contract staffing, DM Burr custodial, and First Group transportation) added <strong>$3.5M</strong> and grew slowest in absolute terms — but if you start the clock at the FY19 vendor-consolidation trough rather than FY18, outsourcing grew at <strong>13.6% CAGR through FY24</strong>.<sup class="cite"><a href="#s4-src-2">2</a></sup> The choice of baseline matters; both views are honest.
+      <strong>Outsourced services</strong> (the combination of Edustaff contract staffing, DM Burr custodial, and First Group transportation) added <strong>$3.5M</strong> and grew slowest in absolute terms — but if you start the clock at the FY19 vendor-consolidation trough rather than FY18, outsourcing grew at <strong>13.6% CAGR through FY24</strong>.<sup class="cite"><a href="#s5-src-2">2</a></sup> The choice of baseline matters; both views are honest.
     </p>
     <p>
-      <strong>Salaries</strong>, by contrast, grew only <strong>3.2% CAGR</strong> — roughly matching general inflation.<sup class="cite"><a href="#s4-src-1">1</a></sup> The narrative that "teacher pay is breaking the budget" is not supported by the data. Average teacher salary went from <strong>$74,442 (FY19) to $78,145 (FY24)</strong> — about 5% over five years, well under healthcare inflation, well under MPSERS rate growth.<sup class="cite"><a href="#s4-src-1">1</a></sup>
+      <strong>Salaries</strong>, by contrast, grew only <strong>3.2% CAGR</strong> — roughly matching general inflation.<sup class="cite"><a href="#s5-src-1">1</a></sup> The narrative that "teacher pay is breaking the budget" is not supported by the data. Average teacher salary went from <strong>$74,442 (FY19) to $78,145 (FY24)</strong> — about 5% over five years, well under healthcare inflation, well under MPSERS rate growth.<sup class="cite"><a href="#s5-src-1">1</a></sup>
     </p>
   </div>
 
   <div class="stat-grid">
     <div class="stat">
-      <div class="stat-number">+$16.2M<sup class="cite"><a href="#s4-src-1">1</a></sup></div>
+      <div class="stat-number">+$16.2M<sup class="cite"><a href="#s5-src-1">1</a></sup></div>
       <div class="stat-label">Retiree benefits added per year (FY18→FY24)</div>
     </div>
     <div class="stat">
-      <div class="stat-number">+$5.8M<sup class="cite"><a href="#s4-src-2">2</a></sup></div>
+      <div class="stat-number">+$5.8M<sup class="cite"><a href="#s5-src-2">2</a></sup></div>
       <div class="stat-label">Active health insurance added</div>
     </div>
     <div class="stat">
-      <div class="stat-number">+$3.5M<sup class="cite"><a href="#s4-src-2">2</a></sup></div>
+      <div class="stat-number">+$3.5M<sup class="cite"><a href="#s5-src-2">2</a></sup></div>
       <div class="stat-label">Outsourced services added</div>
     </div>
     <div class="stat">
-      <div class="stat-number">+$15.2M<sup class="cite"><a href="#s4-src-1">1</a></sup></div>
+      <div class="stat-number">+$15.2M<sup class="cite"><a href="#s5-src-1">1</a></sup></div>
       <div class="stat-label">Salaries (reference)</div>
     </div>
   </div>
@@ -760,11 +859,11 @@
   <details class="section-sources">
     <summary>Sources for this section</summary>
     <ol>
-      <li id="s4-src-1">
+      <li id="s5-src-1">
         <strong>TSD FY24 ACFR — Required Supplementary Information</strong>. Specifically: <em>Schedule of Pension Contributions</em> (p. 42) — ten-year history of MPSERS statutorily required contributions and contributions as % of covered payroll (FY15 $12.5M / 17.6% → FY24 $36.6M / 41.4%; peak FY23 48.6%). <em>Schedule of OPEB Contributions</em> (p. 44) — seven-year history (FY18 $5.5M / 7.5% → FY24 $7.3M / 8.2%). <em>Operating Indicators</em> (p. 77) — covered payroll $73.15M (FY18) → $88.37M (FY24), average teacher salary $74,442 (FY19) → $78,145 (FY24).
         <a href="boarddocs/20241119_audit_8.B._24680_Troy_School_District_ACFR_0624_FS_Final.pdf.r2.md">ACFR (large file on R2)</a>.
       </li>
-      <li id="s4-src-2">
+      <li id="s5-src-2">
         <strong>TSD check register reconciliation, FY11-FY26</strong>. 224,267 disbursement line items / $1.23 billion total. MESSA payments aggregated by vendor and FY (Fund 101 + other operating funds). Outsourced services = sum of contract-staffing vendors (Edustaff, Professional Ed Services, Educational Staffin, Temporary School ST, Safe Ed) + DM Burr Facilities + First Group America. Source dataset is a sibling project parsed from BoardDocs Treasurer's Reports.
         <a href="https://github.com/akarpo/tsd-checkregister">tsd-checkregister repo</a>.
       </li>
@@ -776,13 +875,13 @@
 
 <div class="section-divider">·  ·  ·</div>
 
-<!-- PART 5: ESSER CLIFF -->
+<!-- PART 6: ESSER CLIFF -->
 <section id="esser">
 <div class="container">
   <div class="prose">
-    <h2>5. The ESSER cliff: a $30M cushion that ran out</h2>
+    <h2>6. The ESSER cliff: a $30M cushion that ran out</h2>
     <p>
-      Between FY20 and FY24, the federal government sent Troy School District a one-time stream of pandemic-relief money — the Elementary and Secondary School Emergency Relief (ESSER) fund. Total federal revenue ran <strong>$15M to $21M per year</strong> during the peak ESSER years, well above the <strong>~$6.5M pre-pandemic baseline</strong>.<sup class="cite"><a href="#s5-src-1">1</a></sup> Stacked end-to-end, that's about <strong>$30M of one-time money</strong> above the long-run trend.<sup class="cite"><a href="#s5-src-1">1</a></sup>
+      Between FY20 and FY24, the federal government sent Troy School District a one-time stream of pandemic-relief money — the Elementary and Secondary School Emergency Relief (ESSER) fund. Total federal revenue ran <strong>$15M to $21M per year</strong> during the peak ESSER years, well above the <strong>~$6.5M pre-pandemic baseline</strong>.<sup class="cite"><a href="#s6-src-1">1</a></sup> Stacked end-to-end, that's about <strong>$30M of one-time money</strong> above the long-run trend.<sup class="cite"><a href="#s6-src-1">1</a></sup>
     </p>
     <p>
       ESSER was allowed to fund "extended learning," staff, materials, and facilities. Districts had until <strong>September 30, 2024</strong> to obligate ESSER III dollars. By FY25 federal revenue is back at its pre-pandemic baseline — the cliff. Any positions or programs ESSER had been paying for either ended, or transferred to the operating budget.
@@ -804,22 +903,22 @@
 
   <div class="stat-grid">
     <div class="stat">
-      <div class="stat-number">$21.1M<sup class="cite"><a href="#s5-src-1">1</a></sup></div>
+      <div class="stat-number">$21.1M<sup class="cite"><a href="#s6-src-1">1</a></sup></div>
       <div class="stat-label">FY22 federal revenue peak (ESSER II + III)</div>
     </div>
     <div class="stat">
-      <div class="stat-number">~$30M<sup class="cite"><a href="#s5-src-1">1</a></sup></div>
+      <div class="stat-number">~$30M<sup class="cite"><a href="#s6-src-1">1</a></sup></div>
       <div class="stat-label">Cumulative one-time ESSER cushion above baseline, FY20-FY24</div>
     </div>
     <div class="stat">
-      <div class="stat-number">Sept 30, 2024<sup class="cite"><a href="#s5-src-1">1</a></sup></div>
+      <div class="stat-number">Sept 30, 2024<sup class="cite"><a href="#s6-src-1">1</a></sup></div>
       <div class="stat-label">ESSER III obligation deadline — the cliff edge</div>
     </div>
   </div>
 
   <div class="prose">
     <p>
-      ESSER almost certainly subsidized part of the post-pandemic teaching FTE increase from <strong>787 to 887</strong> (a 50-100 position layer) and a chunk of the SpEd staffing buildup.<sup class="cite"><a href="#s5-src-1">1</a></sup> The exact mapping is hard to recover from audited reports — single audits show ESSER expenditures by program, not by position. What we know with certainty is that the same period (FY20-FY24) saw both the temporary federal cushion and the structural cost increases that the FY26 budget now has to absorb without that cushion.
+      ESSER almost certainly subsidized part of the post-pandemic teaching FTE increase from <strong>787 to 887</strong> (a 50-100 position layer) and a chunk of the SpEd staffing buildup.<sup class="cite"><a href="#s6-src-1">1</a></sup> The exact mapping is hard to recover from audited reports — single audits show ESSER expenditures by program, not by position. What we know with certainty is that the same period (FY20-FY24) saw both the temporary federal cushion and the structural cost increases that the FY26 budget now has to absorb without that cushion.
     </p>
     <p>
       A useful mental model: imagine a household with a temporary second income for four years. They hire a nanny. Then the second income stops. The nanny doesn't unhire themselves; the family has to find the money somewhere or let her go. That is roughly the FY26 budget conversation.
@@ -829,7 +928,7 @@
   <details class="section-sources">
     <summary>Sources for this section</summary>
     <ol>
-      <li id="s5-src-1">
+      <li id="s6-src-1">
         <strong>TSD Annual Comprehensive Financial Reports FY19-FY25 (audited by Plante Moran)</strong>. The Statement of Revenues, Expenditures, and Changes in Fund Balance — Governmental Funds (financial statements section) reports federal revenue by year. The Schedule of Expenditures of Federal Awards (single audit section) itemizes ESSER I (CFDA 84.425D), ESSER II (84.425D), and ESSER III (84.425U) draws by year. Federal revenue figures: FY18 $6.7M, FY19 $6.5M, FY20 $6.8M, FY21 $15.5M, FY22 $21.1M, FY23 $16.8M, FY24 $12.6M, FY25 ~$6.0M. Teaching FTE figures from FY24 ACFR Operating Indicators (Statistical Section, p. 77): FY18 837, FY24 887.
         <a href="boarddocs/20251111_audit_24680_Troy_School_District-0625-AUD-Final.pdf.r2.md">FY25 ACFR (large file on R2)</a>.
       </li>
@@ -841,13 +940,13 @@
 
 <div class="section-divider">·  ·  ·</div>
 
-<!-- PART 6: MPSERS PENSION PASS-THROUGH -->
+<!-- PART 7: MPSERS PENSION PASS-THROUGH -->
 <section id="mpsers">
 <div class="container">
   <div class="prose">
-    <h2>6. MPSERS: the largest expense the district doesn't really control</h2>
+    <h2>7. MPSERS: the largest expense the district doesn't really control</h2>
     <p>
-      Michigan's Public School Employees Retirement System (MPSERS) is the second-largest cost line in TSD's general fund — roughly <strong>$29.3M in the FY26 projection</strong>.<sup class="cite"><a href="#s6-src-1">1</a></sup> The contribution rate is set in Lansing, not Troy. As a share of covered payroll it grew from <strong>17.6% in FY15</strong> to a peak of <strong>48.6% in FY23</strong>, settling at <strong>41.4% in FY24</strong>.<sup class="cite"><a href="#s6-src-1">1</a></sup>
+      Michigan's Public School Employees Retirement System (MPSERS) is the second-largest cost line in TSD's general fund — roughly <strong>$29.3M in the FY26 projection</strong>.<sup class="cite"><a href="#s7-src-1">1</a></sup> The contribution rate is set in Lansing, not Troy. As a share of covered payroll it grew from <strong>17.6% in FY15</strong> to a peak of <strong>48.6% in FY23</strong>, settling at <strong>41.4% in FY24</strong>.<sup class="cite"><a href="#s7-src-1">1</a></sup>
     </p>
   </div>
 
@@ -867,24 +966,24 @@
   <div class="prose">
     <h3>The "pass-through" twist</h3>
     <p>
-      Starting in FY22, Michigan shifted the funding of MPSERS UAAL (unfunded actuarial accrued liability) toward direct state payment via <strong>Section 147c</strong> of the State School Aid Act. The dollars still show up on TSD's books — but they also show up as <em>revenue</em>, dollar-for-dollar.<sup class="cite"><a href="#s6-src-2">2</a></sup>
+      Starting in FY22, Michigan shifted the funding of MPSERS UAAL (unfunded actuarial accrued liability) toward direct state payment via <strong>Section 147c</strong> of the State School Aid Act. The dollars still show up on TSD's books — but they also show up as <em>revenue</em>, dollar-for-dollar.<sup class="cite"><a href="#s7-src-2">2</a></sup>
     </p>
     <p>
-      Per the FY24 ACFR Management's Discussion and Analysis: the 2024 act provided <em>"an offset to the MPSERS UAAL expenditures that each district incurs"</em> equivalent to roughly <strong>$498 per pupil</strong> — about <strong>$6M of TSD revenue</strong> routed specifically to absorb MPSERS UAAL.<sup class="cite"><a href="#s6-src-2">2</a></sup> Revenue-neutral, expense-inflating.
+      Per the FY24 ACFR Management's Discussion and Analysis: the 2024 act provided <em>"an offset to the MPSERS UAAL expenditures that each district incurs"</em> equivalent to roughly <strong>$498 per pupil</strong> — about <strong>$6M of TSD revenue</strong> routed specifically to absorb MPSERS UAAL.<sup class="cite"><a href="#s7-src-2">2</a></sup> Revenue-neutral, expense-inflating.
     </p>
     <p>
-      The implication: when board materials say revenue grew <strong>$34M FY19→FY24</strong>, a substantial slice of that growth is MPSERS pass-through, perfectly matched by a corresponding expense growth. The free operating revenue — money the district can actually choose how to spend — grew much less.<sup class="cite"><a href="#s6-src-2">2</a></sup>
+      The implication: when board materials say revenue grew <strong>$34M FY19→FY24</strong>, a substantial slice of that growth is MPSERS pass-through, perfectly matched by a corresponding expense growth. The free operating revenue — money the district can actually choose how to spend — grew much less.<sup class="cite"><a href="#s7-src-2">2</a></sup>
     </p>
   </div>
 
   <details class="section-sources">
     <summary>Sources for this section</summary>
     <ol>
-      <li id="s6-src-1">
+      <li id="s7-src-1">
         <strong>TSD FY24 ACFR — Schedule of Pension Contributions</strong> (Required Supplementary Information, p. 42). Ten-year history of statutorily required MPSERS contributions and contributions as a percentage of covered payroll. Key data points: FY15 $12.5M / 17.6%, FY18 $22.1M / 30.3%, FY23 peak $41.9M / 48.6%, FY24 $36.6M / 41.4%. The FY26 General Fund 4-Year Projection (Feb 2026) carries an MPSERS line of roughly $29.3M.
         <a href="boarddocs/20241119_audit_8.B._24680_Troy_School_District_ACFR_0624_FS_Final.pdf.r2.md">ACFR (large file on R2)</a>.
       </li>
-      <li id="s6-src-2">
+      <li id="s7-src-2">
         <strong>TSD FY24 ACFR — Management's Discussion and Analysis</strong> (p. 9). Describes the 2024-2025 State School Aid Act provision providing "an offset to the MPSERS UAAL expenditures that each district incurs" rather than a foundation allowance increase, "resulting in a $498 per pupil equivalent for the School District in 2024-2025." For TSD's ~12,400 students that equates to roughly $6M of state revenue specifically routed to absorb the MPSERS UAAL expense.
         <a href="boarddocs/20241119_audit_8.B._24680_Troy_School_District_ACFR_0624_FS_Final.pdf.r2.md">ACFR MD&amp;A</a>.
       </li>
@@ -896,13 +995,13 @@
 
 <div class="section-divider">·  ·  ·</div>
 
-<!-- PART 7: VENDOR COST GROWTH -->
+<!-- PART 8: VENDOR COST GROWTH -->
 <section id="vendors">
 <div class="container">
   <div class="prose">
-    <h2>7. Where the vendor money went: six lines added $14.3M in six years</h2>
+    <h2>8. Where the vendor money went: six lines added $14.3M in six years</h2>
     <p>
-      The check register lets us watch non-payroll spending vendor-by-vendor. Comparing FY19 to FY25, just six vendors account for <strong>+$14.3M of recurring annual cost growth</strong>.<sup class="cite"><a href="#s7-src-1">1</a></sup> That's roughly two-thirds of the total non-payroll cost growth in the operating budget over the same period.
+      The check register lets us watch non-payroll spending vendor-by-vendor. Comparing FY19 to FY25, just six vendors account for <strong>+$14.3M of recurring annual cost growth</strong>.<sup class="cite"><a href="#s8-src-1">1</a></sup> That's roughly two-thirds of the total non-payroll cost growth in the operating budget over the same period.
     </p>
   </div>
 
@@ -922,8 +1021,8 @@
   <div class="prose">
     <p>The pattern is mixed-cause:</p>
     <ul>
-      <li><strong>MESSA</strong> (+$4.6M): structural healthcare inflation — <strong>7.3% CAGR</strong> for six years.<sup class="cite"><a href="#s7-src-1">1</a></sup></li>
-      <li><strong>Edustaff</strong> (+$4.3M): the SpEd Health Care Aide buildup. Net-new layer; ~<strong>$0.6M in FY19 → $5.0M in FY25</strong>. Tied to the in-house decision to support medically-complex students locally rather than placing them out-of-district.<sup class="cite"><a href="#s7-src-2">2</a></sup></li>
+      <li><strong>MESSA</strong> (+$4.6M): structural healthcare inflation — <strong>7.3% CAGR</strong> for six years.<sup class="cite"><a href="#s8-src-1">1</a></sup></li>
+      <li><strong>Edustaff</strong> (+$4.3M): the SpEd Health Care Aide buildup. Net-new layer; ~<strong>$0.6M in FY19 → $5.0M in FY25</strong>. Tied to the in-house decision to support medically-complex students locally rather than placing them out-of-district.<sup class="cite"><a href="#s8-src-2">2</a></sup></li>
       <li><strong>DM Burr</strong> (+$2.7M): custodial services contract that originated FY17-FY19 when TSD outsourced facilities. Scope grew with the building footprint and rates were likely renegotiated; no board presentation found documenting the change.</li>
       <li><strong>First Group America</strong> (+$1.1M): transportation outsourcing, fuel + labor inflation.</li>
       <li><strong>Sec Shield</strong> (+$0.8M): net-new — district security services line that didn't exist in FY19.</li>
@@ -937,11 +1036,11 @@
   <details class="section-sources">
     <summary>Sources for this section</summary>
     <ol>
-      <li id="s7-src-1">
+      <li id="s8-src-1">
         <strong>TSD check register reconciliation, FY11-FY26</strong>. 224,267 disbursement line items totaling $1.227B. Vendor totals per fiscal year aggregated by canonical vendor name (after deduplication of variant spellings). MESSA, Edustaff (plus the related contract-staffing vendors), DM Burr Facilities, First Group America, Sec Shield LLC, and MASB-SEG identified as distinct vendor lines. Source dataset is the sibling tsd-checkregister project parsed from BoardDocs Treasurer's Reports.
         <a href="https://github.com/akarpo/tsd-checkregister">tsd-checkregister repo</a>.
       </li>
-      <li id="s7-src-2">
+      <li id="s8-src-2">
         <strong>Special Ed Edustaff Historical Costs xlsx</strong> (658 rows). General-ledger-level detail provided by Dan Trudel, CPA, Assistant Superintendent of Business Services. Itemizes year-by-year Edustaff invoices charged to special-education function codes, supporting the FY19 → FY25 trajectory and the +$4.3M annual growth figure.
       </li>
     </ol>
@@ -952,13 +1051,13 @@
 
 <div class="section-divider">·  ·  ·</div>
 
-<!-- PART 8: REVENUE CAPACITY -->
+<!-- PART 9: REVENUE CAPACITY -->
 <section id="revenue-capacity">
 <div class="container">
   <div class="prose">
-    <h2>8. "Can't the district just raise property taxes?" — Proposal A says no</h2>
+    <h2>9. "Can't the district just raise property taxes?" — Proposal A says no</h2>
     <p>
-      Troy property values have grown enormously over the last decade. Total taxable value in the district service area rose from <strong>$3.49B in FY15</strong> to <strong>$6.19B in FY24</strong> — up <strong>78% in nine years</strong>, with <strong>+59% in just the five years from FY19</strong>.<sup class="cite"><a href="#s8-src-1">1</a></sup> Common-sense reasoning would say a district sitting on a tax base that grew that fast must be flush.
+      Troy property values have grown enormously over the last decade. Total taxable value in the district service area rose from <strong>$3.49B in FY15</strong> to <strong>$6.19B in FY24</strong> — up <strong>78% in nine years</strong>, with <strong>+59% in just the five years from FY19</strong>.<sup class="cite"><a href="#s9-src-1">1</a></sup> Common-sense reasoning would say a district sitting on a tax base that grew that fast must be flush.
     </p>
     <p>
       It is not. Under Michigan's <strong>Proposal A</strong> framework (passed by voters in 1994), school <em>operating</em> revenue is decoupled from the local property tax base.
@@ -981,8 +1080,8 @@
   <div class="prose">
     <h3>Three reasons the tax-base growth doesn't reach the operating budget</h3>
     <ol>
-      <li><strong>The 18-mill non-homestead is at the constitutional cap.</strong> School districts can levy 18 mills on non-homestead property (businesses, second homes, rentals). TSD is already at 18. There is no headroom.<sup class="cite"><a href="#s8-src-1">1</a></sup></li>
-      <li><strong>The Headlee Amendment rolls back the rate as values grow.</strong> When taxable values rise faster than inflation, the operating millage rate is rolled back automatically. TSD's "Hold Harmless" mill (the supplemental mill districts can levy on homesteads above the foundation allowance) fell from <strong>4.88 mills in FY19 to 2.78 mills in FY23</strong> — losing roughly <strong>$8M/year</strong> of capacity to Headlee.<sup class="cite"><a href="#s8-src-1">1</a></sup></li>
+      <li><strong>The 18-mill non-homestead is at the constitutional cap.</strong> School districts can levy 18 mills on non-homestead property (businesses, second homes, rentals). TSD is already at 18. There is no headroom.<sup class="cite"><a href="#s9-src-1">1</a></sup></li>
+      <li><strong>The Headlee Amendment rolls back the rate as values grow.</strong> When taxable values rise faster than inflation, the operating millage rate is rolled back automatically. TSD's "Hold Harmless" mill (the supplemental mill districts can levy on homesteads above the foundation allowance) fell from <strong>4.88 mills in FY19 to 2.78 mills in FY23</strong> — losing roughly <strong>$8M/year</strong> of capacity to Headlee.<sup class="cite"><a href="#s9-src-1">1</a></sup></li>
       <li><strong>The foundation allowance is set in Lansing.</strong> The state sets a per-pupil foundation amount; local non-homestead revenue counts <em>against</em> the state's share. If local property tax revenue rises, the state's share falls — net to the district, nothing changes.</li>
     </ol>
     <p>
@@ -991,14 +1090,14 @@
 
     <h3>Demographics: school-age population is declining</h3>
     <p>
-      Troy's population grew <strong>+5.5% FY15→FY24</strong> (83,496 → 88,051), but TSD enrollment fell <strong>-0.9%</strong> (12,563 → 12,447).<sup class="cite"><a href="#s8-src-1">1</a></sup> The school-enrolled share of the population dropped from <strong>15.0% to 14.1%</strong> — Troy is aging slightly, and a higher share of school-age children are enrolled outside TSD (private schools, charters, school-of-choice).
+      Troy's population grew <strong>+5.5% FY15→FY24</strong> (83,496 → 88,051), but TSD enrollment fell <strong>-0.9%</strong> (12,563 → 12,447).<sup class="cite"><a href="#s9-src-1">1</a></sup> The school-enrolled share of the population dropped from <strong>15.0% to 14.1%</strong> — Troy is aging slightly, and a higher share of school-age children are enrolled outside TSD (private schools, charters, school-of-choice).
     </p>
   </div>
 
   <details class="section-sources">
     <summary>Sources for this section</summary>
     <ol>
-      <li id="s8-src-1">
+      <li id="s9-src-1">
         <strong>TSD FY24 ACFR — Statistical Section</strong>. <em>Schedule of Taxable Property Values</em> (pp. 73-74) — total taxable value FY15 $3.49B → FY24 $6.19B. <em>Schedule of Direct and Overlapping Property Tax Rates</em> (p. 75) — millage rate history. <em>Demographic and Operating Statistics</em> (pp. 76-77) — population, enrollment, per-capita income. Hold Harmless millage detail (4.88 → 2.78 mills) is documented in the board's Headlee rollback fact-sheet referenced in budget presentations.
         <a href="boarddocs/20241119_audit_8.B._24680_Troy_School_District_ACFR_0624_FS_Final.pdf.r2.md">ACFR (large file on R2)</a>.
       </li>
@@ -1010,11 +1109,11 @@
 
 <div class="section-divider">·  ·  ·</div>
 
-<!-- PART 9: SYNTHESIS + OPEN QUESTIONS -->
+<!-- PART 10: SYNTHESIS + OPEN QUESTIONS -->
 <section id="synthesis">
 <div class="container">
   <div class="prose">
-    <h2>9. Putting it together — and what's still unknown</h2>
+    <h2>10. Putting it together — and what's still unknown</h2>
     <p>
       Troy School District's structural deficit is not the result of any single decision or bad actor. It is the compounding of four things happening at once:
     </p>
@@ -1042,12 +1141,12 @@
     </table>
 
     <p>
-      Revenue grew roughly <strong>$32M</strong> over the same period. But ~$15-20M is MPSERS pass-through (revenue and expense both up, by the same amount), and an additional ~$5M was ESSER pulled forward (one-time). <strong>The net "free" operating revenue growth — money the board could actually choose how to spend — was perhaps $12-15M.</strong><sup class="cite"><a href="#s9-src-1">1</a></sup> Free expense growth outran free revenue growth by roughly $20M. <strong>That gap is the structural deficit.</strong>
+      Revenue grew roughly <strong>$32M</strong> over the same period. But ~$15-20M is MPSERS pass-through (revenue and expense both up, by the same amount), and an additional ~$5M was ESSER pulled forward (one-time). <strong>The net "free" operating revenue growth — money the board could actually choose how to spend — was perhaps $12-15M.</strong><sup class="cite"><a href="#s10-src-1">1</a></sup> Free expense growth outran free revenue growth by roughly $20M. <strong>That gap is the structural deficit.</strong>
     </p>
 
     <h3>What changed — and what didn't</h3>
     <p>
-      <strong>Changed:</strong> Support Services FTE collapsed from <strong>276 to 175</strong> over nine years as facilities and transportation were outsourced. The SpEd staffing model added <strong>~100 contracted Health Care Aides</strong> on top of in-house aides. ESSER funded an incremental layer of <strong>50-100 teaching positions</strong>.<sup class="cite"><a href="#s9-src-1">1</a></sup>
+      <strong>Changed:</strong> Support Services FTE collapsed from <strong>276 to 175</strong> over nine years as facilities and transportation were outsourced. The SpEd staffing model added <strong>~100 contracted Health Care Aides</strong> on top of in-house aides. ESSER funded an incremental layer of <strong>50-100 teaching positions</strong>.<sup class="cite"><a href="#s10-src-1">1</a></sup>
     </p>
     <p>
       <strong>Did not change:</strong> total FTE is roughly flat (1,072 → 1,078); average teacher salary grew at about half the rate of inflation; operating millage is at the constitutional cap; foundation allowance grew at statewide inflation. <strong>This is a composition story — different mix of staff, more contracted services, more benefit cost — not an "everybody got rich" story.</strong>
@@ -1073,8 +1172,8 @@
   <details class="section-sources">
     <summary>Sources for this section</summary>
     <ol>
-      <li id="s9-src-1">
-        <strong>Synthesis based on Sections 1-8 above.</strong> All underlying figures are sourced and cited in the prior sections' source panels. The "$32M revenue growth, ~$15-20M of which is MPSERS pass-through, ~$5M of which is ESSER" decomposition draws from the FY24 ACFR Statement of Revenues, Expenditures and Changes in Fund Balance — Governmental Funds (financial statements section), the Schedule of Pension Contributions (Required Supplementary Information), and the Schedule of Expenditures of Federal Awards (single audit section). The $24.2M cumulative cuts composition is from the Jan 13, 2026 Board Budget Planning Workshop deck.
+      <li id="s10-src-1">
+        <strong>Synthesis based on Sections 1-9 above.</strong> All underlying figures are sourced and cited in the prior sections' source panels. The "$32M revenue growth, ~$15-20M of which is MPSERS pass-through, ~$5M of which is ESSER" decomposition draws from the FY24 ACFR Statement of Revenues, Expenditures and Changes in Fund Balance — Governmental Funds (financial statements section), the Schedule of Pension Contributions (Required Supplementary Information), and the Schedule of Expenditures of Federal Awards (single audit section). The $24.2M cumulative cuts composition is from the Jan 13, 2026 Board Budget Planning Workshop deck.
         <a href="boarddocs/20241119_audit_8.B._24680_Troy_School_District_ACFR_0624_FS_Final.pdf.r2.md">ACFR (large file on R2)</a>.
       </li>
     </ol>
@@ -1082,16 +1181,6 @@
 
 </div>
 </section>
-
-<div class="section-divider">·  ·  ·</div>
-
-<div class="container">
-  <div class="prose">
-    <p style="color: var(--text-faint); font-style: italic;">
-      Still on the roadmap: a year-range filter on the charts, a $-vs-per-pupil toggle, and an Edustaff/Levenson timeline. The analytical content is complete; what remains is interactivity.
-    </p>
-  </div>
-</div>
 
 </main>
 
@@ -1176,28 +1265,36 @@ const DATA = {
     salaries:   [73.15, 73.31, 79.54, 79.44, 83.64, 86.08, 88.37],
   },
 
-  // Section 5: ESSER cliff — federal revenue trajectory
+  // Section 4: HCA / Edustaff SpEd-coded timeline FY22-FY26 YTD (from xlsx)
+  hca_timeline: {
+    years:   ['FY22', 'FY23', 'FY24', 'FY25', 'FY26 YTD'],
+    hca:     [ 0.002, 1.332, 2.572, 2.741, 1.945],
+    other:   [ 0.262, 0.208, 0.411, 0.238, 0.160],
+    levenson_after_index: 2, // mid-FY24 (Dec 2023)
+  },
+
+  // Section 6: ESSER cliff — federal revenue trajectory
   esser: {
     years: ['FY18','FY19','FY20','FY21','FY22','FY23','FY24','FY25*'],
     federal:  [6.7, 6.5, 6.8, 15.5, 21.1, 16.8, 12.6, 6.0],
     baseline: 6.5,
   },
 
-  // Section 6: MPSERS contribution + % of payroll (derived from growth dataset)
+  // Section 7: MPSERS contribution + % of payroll (derived from growth dataset)
   mpsers_history: {
     years: ['FY18','FY19','FY20','FY21','FY22','FY23','FY24'],
     dollars:        [22.14, 23.85, 24.92, 27.15, 30.53, 41.85, 36.62],
     pct_of_payroll: [ 30.3,  32.5,  31.3,  34.2,  36.5,  48.6,  41.4],
   },
 
-  // Section 7: vendor growth FY19 vs FY25 (check register, $M)
+  // Section 8: vendor growth FY19 vs FY25 (check register, $M)
   vendors: {
     names: ['MESSA\n(health ins.)', 'Edustaff\n(contract SpEd)', 'DM Burr\n(custodial)', 'First Group\n(transport)', 'Sec Shield\n(security)', 'MASB-SEG\n(prop. ins.)'],
     fy19: [11.1, 0.6, 3.2, 2.9, 0.0, 0.0],
     fy25: [15.7, 5.0, 5.8, 4.0, 0.8, 0.8],
   },
 
-  // Section 8: taxable value vs operating millage
+  // Section 9: taxable value vs operating millage
   revenue_capacity: {
     years: ['FY15','FY19','FY20','FY21','FY22','FY23','FY24'],
     taxable_value_b: [3.49, 3.90, 4.09, 4.24, 4.33, 4.62, 6.19],
@@ -1517,6 +1614,62 @@ new Chart(document.getElementById('chart-growth-rates'), {
 });
 
 // ====================================================================
+// CHART 4: HCA / EDUSTAFF SPED-CODED TIMELINE (Section 4)
+// Stacked bars: HCA (object code 3116) + Other SpEd Edustaff (3110-3115).
+// Pre-Levenson years are softer-colored, post-Levenson are full-color.
+// ====================================================================
+new Chart(document.getElementById('chart-hca-timeline'), {
+  type: 'bar',
+  data: {
+    labels: DATA.hca_timeline.years,
+    datasets: [
+      {
+        label: 'HCA (Health Care Aides, code 3116)',
+        data: DATA.hca_timeline.hca,
+        backgroundColor: DATA.hca_timeline.years.map((_, i) =>
+          i <= DATA.hca_timeline.levenson_after_index - 1
+            ? 'rgba(184, 68, 47, 0.55)'   // pre-Levenson: lighter accent
+            : 'rgba(184, 68, 47, 0.92)'   // FY24 onward (Levenson delivered Dec 2023, mid-FY24)
+        ),
+        borderRadius: 2,
+        stack: 'spend',
+      },
+      {
+        label: 'Other SpEd Edustaff (subs, instruction, codes 3110-3115)',
+        data: DATA.hca_timeline.other,
+        backgroundColor: 'rgba(122, 111, 85, 0.65)',
+        borderRadius: 2,
+        stack: 'spend',
+      },
+    ],
+  },
+  options: {
+    responsive: true,
+    maintainAspectRatio: false,
+    interaction: { mode: 'index', intersect: false },
+    plugins: {
+      legend: { position: 'bottom' },
+      tooltip: {
+        callbacks: {
+          label: (ctx) => `${ctx.dataset.label}: $${ctx.parsed.y.toFixed(2)}M`,
+          afterBody: (ctxs) => {
+            if (ctxs.length === 2) {
+              const total = (ctxs[0].parsed.y + ctxs[1].parsed.y).toFixed(2);
+              return [`Total SpEd Edustaff: $${total}M`];
+            }
+            return [];
+          },
+        },
+      },
+    },
+    scales: {
+      x: { ...yearAxis, stacked: true },
+      y: { ...dollarAxis, stacked: true, beginAtZero: true, suggestedMax: 3.5 },
+    },
+  },
+});
+
+// ====================================================================
 // CHART 5: ESSER CLIFF — federal revenue trajectory
 // ====================================================================
 new Chart(document.getElementById('chart-esser'), {
@@ -1760,6 +1913,7 @@ new Chart(document.getElementById('chart-revenue-capacity'), {
 
 const CHARTS = {
   perPupil: Chart.getChart('chart-per-pupil'),
+  hca:      Chart.getChart('chart-hca-timeline'),
   sped:     Chart.getChart('chart-sped'),
   growth:   Chart.getChart('chart-growth-rates'),
   esser:    Chart.getChart('chart-esser'),
@@ -1774,6 +1928,10 @@ const SNAPSHOTS = {
     cost: [...DATA.per_pupil.cost_per_pupil],
     rev:  [...DATA.per_pupil.rev_per_pupil],
     enrollment: [...DATA.per_pupil.enrollment],
+  },
+  hca: {
+    years: [...DATA.hca_timeline.years],
+    series: [[...DATA.hca_timeline.hca], [...DATA.hca_timeline.other]],
   },
   sped: {
     years: [...DATA.sped.years],
@@ -1804,18 +1962,24 @@ const SNAPSHOTS = {
 
 let perPupilMode = 'per-pupil';
 
-function matchIdx(years, fy) {
-  let i = years.indexOf(fy);
-  if (i >= 0) return i;
-  // tolerate label variants like 'FY25*'
-  return years.findIndex(y => y.startsWith(fy));
+function fyToNum(fy) {
+  // 'FY15' -> 15, 'FY26 YTD' -> 26, 'FY25*' -> 25
+  const m = /FY(\d+)/.exec(fy);
+  return m ? parseInt(m[1], 10) : -1;
 }
 
 function sliceBounds(years, fromFY, toFY) {
-  let i1 = matchIdx(years, fromFY);
-  if (i1 < 0) i1 = 0;
-  let i2 = matchIdx(years, toFY);
-  if (i2 < 0) i2 = years.length - 1;
+  const fromN = fyToNum(fromFY);
+  const toN   = fyToNum(toFY);
+  const yearsN = years.map(fyToNum);
+  // first index where year >= fromN; if none, beyond range
+  let i1 = yearsN.findIndex(y => y >= fromN);
+  if (i1 < 0) i1 = years.length; // empty slice
+  // last index where year <= toN
+  let i2 = -1;
+  for (let i = years.length - 1; i >= 0; i--) {
+    if (yearsN[i] <= toN) { i2 = i; break; }
+  }
   return [i1, i2];
 }
 
@@ -1877,7 +2041,7 @@ function applyAllFilters() {
   const fromFY = document.getElementById('filter-from').value;
   const toFY   = document.getElementById('filter-to').value;
   refreshPerPupil(fromFY, toFY);
-  ['sped', 'growth', 'esser', 'mpsers', 'revenue'].forEach(k => refreshGeneric(k, fromFY, toFY));
+  ['hca', 'sped', 'growth', 'esser', 'mpsers', 'revenue'].forEach(k => refreshGeneric(k, fromFY, toFY));
 }
 
 (function initFilter() {
