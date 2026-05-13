@@ -322,6 +322,75 @@
     font-size: 0.85em;
   }
 
+  /* Year-range filter + chart toggles (Phase 2B) */
+  .filter-bar {
+    background: var(--bg-elevated);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 12px 18px;
+    margin: 28px auto;
+    max-width: var(--max-wide);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+  .filter-label { color: var(--text-soft); font-weight: 500; }
+  .filter-select {
+    padding: 4px 10px;
+    border: 1px solid var(--rule-strong);
+    background: var(--bg);
+    font-family: inherit;
+    font-size: 0.85rem;
+    border-radius: 3px;
+    color: var(--text);
+    cursor: pointer;
+  }
+  .filter-sep { color: var(--text-faint); }
+  .filter-reset {
+    padding: 4px 12px;
+    background: transparent;
+    border: 1px solid var(--rule-strong);
+    color: var(--text-soft);
+    font-family: inherit;
+    font-size: 0.78rem;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .filter-reset:hover { background: var(--bg); color: var(--accent); border-color: var(--accent-soft); }
+  .filter-note { margin-left: auto; color: var(--text-faint); font-size: 0.78rem; }
+
+  .chart-toggle {
+    display: inline-flex;
+    margin: 0 0 14px;
+    border: 1px solid var(--rule-strong);
+    border-radius: 3px;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+  }
+  .toggle-btn {
+    padding: 5px 14px;
+    background: var(--bg-elevated);
+    border: none;
+    border-right: 1px solid var(--rule);
+    font-size: 0.78rem;
+    color: var(--text-soft);
+    cursor: pointer;
+    font-weight: 500;
+  }
+  .toggle-btn:last-child { border-right: none; }
+  .toggle-btn.active {
+    background: var(--accent);
+    color: white;
+  }
+  .toggle-btn:hover:not(.active) { background: var(--bg); color: var(--accent); }
+  @media (max-width: 640px) {
+    .filter-bar { font-size: 0.8rem; padding: 10px 14px; }
+    .filter-note { display: none; }
+  }
+
   /* Footer */
   footer {
     margin-top: 100px;
@@ -504,6 +573,18 @@
 
 <div class="section-divider">·  ·  ·</div>
 
+<!-- Year-range filter — affects time-series charts in Sections 2-6 and 8 -->
+<div class="container">
+  <div class="filter-bar" role="region" aria-label="Year range filter for time-series charts">
+    <span class="filter-label">Filter time-series charts:</span>
+    <select id="filter-from" class="filter-select" aria-label="From fiscal year"></select>
+    <span class="filter-sep">to</span>
+    <select id="filter-to" class="filter-select" aria-label="To fiscal year"></select>
+    <button id="filter-reset" class="filter-reset" type="button">Reset</button>
+    <span class="filter-note">Applies to charts in Sections 2, 3, 4, 5, 6, and 8</span>
+  </div>
+</div>
+
 <!-- PART 2: WHAT GREW (10-YEAR BASELINE) -->
 <section id="what-grew">
 <div class="container">
@@ -521,6 +602,10 @@
   <div class="chart-block">
     <div class="chart-title">General Fund cost per pupil, FY15-FY24</div>
     <div class="chart-subtitle">Up 40% in nine years. The post-Covid acceleration (FY22 onward) reflects salary CBA progressions, MPSERS rate increases, MESSA premium inflation, and new SpEd staffing layers — not enrollment growth (enrollment is shrinking).</div>
+    <div class="chart-toggle" role="group" aria-label="View mode for cost chart">
+      <button class="toggle-btn active" type="button" data-chart="perPupil" data-mode="per-pupil">$ per pupil</button>
+      <button class="toggle-btn" type="button" data-chart="perPupil" data-mode="total">Total $M</button>
+    </div>
     <div class="chart-wrap">
       <div class="chart-canvas-wrap"><canvas id="chart-per-pupil"></canvas></div>
       <div class="chart-source">
@@ -1666,6 +1751,167 @@ new Chart(document.getElementById('chart-revenue-capacity'), {
     },
   },
 });
+
+// ====================================================================
+// YEAR-RANGE FILTER + PER-PUPIL TOGGLE (Phase 2B)
+// Chart.js maintains a registry by canvas id — grab references here
+// so we don't have to refactor the chart constructors above.
+// ====================================================================
+
+const CHARTS = {
+  perPupil: Chart.getChart('chart-per-pupil'),
+  sped:     Chart.getChart('chart-sped'),
+  growth:   Chart.getChart('chart-growth-rates'),
+  esser:    Chart.getChart('chart-esser'),
+  mpsers:   Chart.getChart('chart-mpsers'),
+  revenue:  Chart.getChart('chart-revenue-capacity'),
+};
+
+// Snapshot original data so filter slices always start from the source-of-truth
+const SNAPSHOTS = {
+  perPupil: {
+    years: [...DATA.per_pupil.years],
+    cost: [...DATA.per_pupil.cost_per_pupil],
+    rev:  [...DATA.per_pupil.rev_per_pupil],
+    enrollment: [...DATA.per_pupil.enrollment],
+  },
+  sped: {
+    years: [...DATA.sped.years],
+    series: [[...DATA.sped.revenue], [...DATA.sped.expenditures]],
+  },
+  growth: {
+    years: [...DATA.growth.years],
+    series: [
+      [...DATA.growth.retiree],
+      [...DATA.growth.messa],
+      [...DATA.growth.outsourced],
+      [...DATA.growth.salaries],
+    ],
+  },
+  esser: {
+    years: [...DATA.esser.years],
+    series: [[...DATA.esser.federal]], // second dataset (baseline) is regenerated from labels
+  },
+  mpsers: {
+    years: [...DATA.mpsers_history.years],
+    series: [[...DATA.mpsers_history.dollars], [...DATA.mpsers_history.pct_of_payroll]],
+  },
+  revenue: {
+    years: [...DATA.revenue_capacity.years],
+    series: [[...DATA.revenue_capacity.taxable_value_b], [...DATA.revenue_capacity.tax_rate]],
+  },
+};
+
+let perPupilMode = 'per-pupil';
+
+function matchIdx(years, fy) {
+  let i = years.indexOf(fy);
+  if (i >= 0) return i;
+  // tolerate label variants like 'FY25*'
+  return years.findIndex(y => y.startsWith(fy));
+}
+
+function sliceBounds(years, fromFY, toFY) {
+  let i1 = matchIdx(years, fromFY);
+  if (i1 < 0) i1 = 0;
+  let i2 = matchIdx(years, toFY);
+  if (i2 < 0) i2 = years.length - 1;
+  return [i1, i2];
+}
+
+function refreshPerPupil(fromFY, toFY) {
+  const snap = SNAPSHOTS.perPupil;
+  const chart = CHARTS.perPupil;
+  const [i1, i2] = sliceBounds(snap.years, fromFY, toFY);
+  if (i1 > i2) {
+    chart.data.labels = [];
+    chart.data.datasets.forEach(ds => ds.data = []);
+  } else {
+    chart.data.labels = snap.years.slice(i1, i2 + 1);
+    const enr  = snap.enrollment.slice(i1, i2 + 1);
+    const cost = snap.cost.slice(i1, i2 + 1);
+    const rev  = snap.rev.slice(i1, i2 + 1);
+    if (perPupilMode === 'total') {
+      chart.data.datasets[0].data = cost.map((c, i) => c * enr[i] / 1e6);
+      chart.data.datasets[1].data = rev.map((r, i) => r * enr[i] / 1e6);
+      chart.data.datasets[0].label = 'Operating cost (total)';
+      chart.data.datasets[1].label = 'Operating revenue (total)';
+      chart.options.scales.y.ticks.callback = (v) => `$${v.toFixed(0)}M`;
+      chart.options.scales.y.suggestedMin = 130;
+      chart.options.plugins.tooltip.callbacks.label = (ctx) => `${ctx.dataset.label}: $${ctx.parsed.y.toFixed(1)}M`;
+    } else {
+      chart.data.datasets[0].data = cost;
+      chart.data.datasets[1].data = rev;
+      chart.data.datasets[0].label = 'Operating cost per pupil';
+      chart.data.datasets[1].label = 'Operating revenue per pupil';
+      chart.options.scales.y.ticks.callback = (v) => `$${(v/1000).toFixed(0)}K`;
+      chart.options.scales.y.suggestedMin = 10000;
+      chart.options.plugins.tooltip.callbacks.label = (ctx) => `${ctx.dataset.label}: $${ctx.parsed.y.toLocaleString()}`;
+    }
+  }
+  chart.update('none');
+}
+
+function refreshGeneric(chartKey, fromFY, toFY) {
+  const snap = SNAPSHOTS[chartKey];
+  const chart = CHARTS[chartKey];
+  const [i1, i2] = sliceBounds(snap.years, fromFY, toFY);
+  if (i1 > i2) {
+    chart.data.labels = [];
+    chart.data.datasets.forEach(ds => ds.data = []);
+  } else {
+    chart.data.labels = snap.years.slice(i1, i2 + 1);
+    chart.data.datasets.forEach((ds, di) => {
+      // ESSER chart's 2nd dataset is the constant pre-pandemic baseline line.
+      if (chartKey === 'esser' && di === 1) {
+        ds.data = chart.data.labels.map(() => DATA.esser.baseline);
+      } else if (snap.series[di]) {
+        ds.data = snap.series[di].slice(i1, i2 + 1);
+      }
+    });
+  }
+  chart.update('none');
+}
+
+function applyAllFilters() {
+  const fromFY = document.getElementById('filter-from').value;
+  const toFY   = document.getElementById('filter-to').value;
+  refreshPerPupil(fromFY, toFY);
+  ['sped', 'growth', 'esser', 'mpsers', 'revenue'].forEach(k => refreshGeneric(k, fromFY, toFY));
+}
+
+(function initFilter() {
+  const fromSel = document.getElementById('filter-from');
+  const toSel   = document.getElementById('filter-to');
+  if (!fromSel || !toSel) return;
+  for (let y = 15; y <= 25; y++) {
+    const fy = 'FY' + y;
+    fromSel.appendChild(new Option(fy, fy));
+    toSel.appendChild(new Option(fy, fy));
+  }
+  fromSel.value = 'FY15';
+  toSel.value   = 'FY25';
+  fromSel.addEventListener('change', applyAllFilters);
+  toSel.addEventListener('change', applyAllFilters);
+  document.getElementById('filter-reset').addEventListener('click', () => {
+    fromSel.value = 'FY15';
+    toSel.value   = 'FY25';
+    applyAllFilters();
+  });
+})();
+
+(function initPerPupilToggle() {
+  const btns = document.querySelectorAll('.toggle-btn[data-chart="perPupil"]');
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      perPupilMode = btn.dataset.mode;
+      btns.forEach(b => b.classList.toggle('active', b === btn));
+      const fromFY = document.getElementById('filter-from').value;
+      const toFY   = document.getElementById('filter-to').value;
+      refreshPerPupil(fromFY, toFY);
+    });
+  });
+})();
 
 </script>
 
