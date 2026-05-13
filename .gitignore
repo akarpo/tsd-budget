@@ -18,6 +18,9 @@ venv/
 *.tmp
 *.log
 
+# Cloudflare Pages build output (created by build.sh)
+/dist/
+
 # Files >5MB externalized to Cloudflare R2 (see *.r2.md sibling stubs and boarddocs/MANIFEST.md)
 /boarddocs/20210817_strategic_8-17-21_BOE_Strategic_Planning_Recommendations_2026_Autosaved.pptx
 /boarddocs/20210907_strategic_9-7-21_BOE_Strategic_Planning_Recommendations_2026_Autosaved__-__Read-Only.pptx

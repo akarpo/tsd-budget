@@ -38,6 +38,20 @@ The file `~/Downloads/Troy_ACFR_FY2025.pdf` (not in this folder) is the **City o
 
 The BoardDocs Public API (Lotus Domino + CloudFront WAF) is undocumented but stable. The `scripts/` directory contains everything needed to re-run the harvest. See [`scripts/README.md`](./scripts/README.md) for the recipe.
 
+## Deploying to Cloudflare Pages
+
+Cloudflare Pages defaults to treating the repo root as the asset directory, which includes `.git/objects/pack/*.pack` (currently ~85 MiB — over Cloudflare's 25 MiB per-asset limit). To work around this, the repo includes a `build.sh` that produces a clean `dist/` containing only tracked files via `git archive`.
+
+**Configure in the Cloudflare Pages dashboard:**
+
+| Setting | Value |
+|---|---|
+| Build command | `bash build.sh` |
+| Build output directory | `dist` |
+| Root directory | (leave default / blank) |
+
+The script is also runnable locally for preview: `bash build.sh && open dist/index.html`.
+
 ## License
 
 Sources cited are in the public domain (audited financial reports posted to BoardDocs by TSD, statewide reports from state agencies). The analysis writeup, scripts, and metadata in this folder are released under MIT.
