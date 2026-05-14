@@ -463,8 +463,8 @@ A few things this analysis cannot answer from public records, and would benefit 
 
 ## About this analysis
 
-Compiled from public records by a Troy resident. Each section above carries its own source list. The published, chart-driven version of this writeup lives at **<https://tsd-budget.karpowitsch.org>** (`index.html` in this repo); methodology, source documents, and analysis scripts are open at <https://github.com/akarpo/tsd-budget>.
+Compiled from public records by a '04 Troy High Alumnus. Each section above carries its own source list. The published, chart-driven version of this writeup lives at **<https://tsd-budget.karpowitsch.org>** (`index.html` in this repo); methodology, source documents, and analysis scripts are open at <https://github.com/akarpo/tsd-budget>.
 
-Errors and disagreements welcome — open an issue on GitHub or get in touch.
+Errors and disagreements welcome — open an issue on GitHub or [get in touch](https://www.linkedin.com/in/alexkarpowitsch/).
 
 **Underlying data:** 5 audited TSD ACFRs (FY21–FY25, Plante Moran), the FY26 General Fund 4-Year Projection (Feb 2026), the Levenson / New Solutions K12 SpEd Findings Report (Dec 2023), board presentations FY20–FY26, and a check-register reconciliation covering FY11–FY26 (224,267 line items / $1.23B in disbursements, sourced from the sibling [tsd-checkregister](https://github.com/akarpo/tsd-checkregister) project).
