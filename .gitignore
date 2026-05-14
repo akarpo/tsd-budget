@@ -48,3 +48,8 @@ venv/
 /boarddocs/20251111_achievement_November_Board_Student_Assessment_Update_2025_.pdf
 /boarddocs/20251111_audit_24680_Troy_School_District-0625-AUD-Final.pdf
 /boarddocs/20251118_audit_8.B._24680_Troy_School_District-0625-AUD-Final.pdf
+
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
